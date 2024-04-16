@@ -16,7 +16,7 @@
         <img src="#" width="33" height="38" alt="Логотип Cat Energy">
       </a>
 
-      <a class="main-header__logo-name" href="#">
+      <a class="main-header__logo-name logo-name" href="#">
         <img class="main-header__logo-title" src="#" width="101" height="18" alt="Cat Energy">
       </a>
     </div>
@@ -109,44 +109,48 @@
         <h2 class="statistics__title">Живой пример</h2>
         <p class="statistics__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
 
-        <div class="statistics__example">
-          <div class="statistics__example-achievement">
-            <span class="statistics__example-value">5 кг</span>
-            <span class="statistics__example-title">Снижение веса</span>
+        <dl class="statistics__list">
+          <div class="statistics__item">
+            <dt class="statistics__number">5 кг</dt>
+            <dd class="statistics__description">Снижение веса</dd>
           </div>
 
-          <div class="statistics__achievement">
-            <span class="statistics__achievement-value">60 дней</span>
-            <span class="statistics__achievement-title">Затрачено времени</span>
+          <div class="statistics__item">
+            <dt class="statistics__number">60 дней</dt>
+            <dd class="statistics__description">Затрачено времени</dd>
           </div>
 
-          <p class="statistics__costs">
-            Затраты на питание:
-            <span class="statistics__costs-amount">15 000 РУБ.</span>
-          </p>
-        </div>
+          <div class="statistics__item">
+            <dt class="statistics__number">Затраты на питание:</dt>
+            <dd class="statistics__description">15 000 РУБ.</dd>
+          </div>
+        </dl>
 
         <div class="statistics__slider">
-          <button class="statistics__toggle"></button>
-
-          <div class="statistics__slider slider">
-
-            <div class="statistics__slider-images slider__images--before">
-              <img src="#" width="" height="" alt="Изображение толстого кота">
-            </div>
-
-            <div class="statistics__slider-images slider__images--after">
-              <img src="#" width="" height="" alt="Изображение стройного кота">
-            </div>
-
+          <div class="statistics__toggle">
+            <button class="statistics__toggle-left" type="button">
+              <span class="visually-hidden">Влево</span>
+            </button>
+            <button class="statistics__toggle-right" type="button">
+              <span class="visually-hidden">Вправо</span>
+            </button>
           </div>
         </div>
 
+        <div class="statistics__images">
+          <div class="statistics__images-before">
+            <img src="#" width="" height="" alt="Изображение толстого кота">
+          </div>
+
+          <div class="statistics__images-after">
+            <img src="#" width="" height="" alt="Изображение стройного кота">
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="contacts">
-      <div class="contacts__wrapper">
+      <div class="contacts__wrapper white">
         <h2 class="contacts__title">Контакты</h2>
         <p class="contacts__slogan">приглашаем
           к сотрудничеству
@@ -158,13 +162,14 @@
         </p>
       </div>
 
-      <div class="contacts__map-container"></div>
+      <div class="contacts__map-container">
+      </div>
     </section>
   </main>
 
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <a class="main-footer__logo-name" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="main-footer__logo-name logo-name" href="https://htmlacademy.ru/intensive/adaptive">
         <img class="main-footer__logo-title" src="#" width="128" height="24" alt="Cat Energy">
       </a>
 
