@@ -11,28 +11,28 @@
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-header__logo-wrapper">
-      <a class="main-header__logo" href="#">
-        <img class="main-header__logo-icon" src="#" width="33" height="38" alt="Логотип Cat Energy">
-        <img class="main-header__logo-no-iccon" src="#" width="101" height="18" alt="Cat Energy">
+    <div class="logo-wrapper">
+      <a class="logo" href="#">
+        <img class="logo-icon" src="#" width="33" height="38" alt="Логотип Cat Energy">
+        <img class="logo-no-icon" src="#" width="101" height="18" alt="Cat Energy">
       </a>
     </div>
 
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
+    <nav class="navigation">
+      <button class="navigation__toggle" type="button">
         <span class="visually-hidden">Открыть/закрыть меню</span>
       </button>
 
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--current">
-            <a class="main-nav__link" href="#">Главная</a>
+      <div class="navigation__wrapper">
+        <ul class="navigation__list">
+          <li class="navigation__item navigation__item--current">
+            <a class="navigation__link" href="#">Главная</a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Подбор программы</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -40,16 +40,14 @@
   </header>
 
   <main class="main-container">
-
     <h1 class="visually-hidden">Интернет-магазин Кэт-энерджи</h1>
 
-    <section class="promo">
-      <div class="promo__wrapper">
-        <h2 class="promo__title">Функциональное
-          питание для котов</h2>
-        <p class="promo__slogan">Занялся собой? Займись котом!</p>
+    <section class="hero">
+      <div class="hero__wrapper">
+        <h2 class="hero__title">Функциональное питание для котов</h2>
+        <p class="hero__slogan">Занялся собой? Займись котом!</p>
         <img src="#" width="280" height="270" alt="Изображение питания для кота">
-        <a class="promo__button button button--primary" href="#">
+        <a class="button button--primary" href="#">
           Подобрать программу
         </a>
       </div>
@@ -59,17 +57,18 @@
       <div class="programm__wrapper">
         <h2 class="visually-hidden">Каталог продукции</h2>
 
-        <article class="programm__card programm-slim">
-          <h3 class="programm__card-title">Похудение</h3>
-          <p class="programm__card-description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="programm__card-button" href="catalog.html">Каталог slim</a>
-        </article>
-
-        <article class="programm__card programm-pro">
-          <h3 class="programm__card-title">Набор массы</h3>
-          <p class="programm__card-description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="programm__card-button" href="catalog.html">Каталог pro</a>
-        </article>
+        <ul class="programm__list">
+          <li class="programm__item programm-slim">
+            <h3 class="programm__title">Похудение</h3>
+            <p class="programm__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <a class="programm__button" href="catalog.html">Каталог slim</a>
+          </li>
+          <li class="programm__item programm-pro">
+            <h3 class="programm__title">>Набор массы</h3>
+            <p class="programm__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <a class="programm__button" href="catalog.html">Каталог pro</a>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -102,25 +101,23 @@
         <h2 class="statistics__title">Живой пример</h2>
         <p class="statistics__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
 
-        <dl class="statistics__list">
-          <div class="statistics__item">
-            <dt class="statistics__number">5 кг</dt>
-            <dd class="statistics__description">Снижение веса</dd>
-          </div>
+        <ul class="statistics__list">
+          <li class="statistics__item">
+            <span class="statistics__number">5 кг</span>
+            <span class="statistics__description">Снижение веса</span>
+          </li>
+          <li class="statistics__item">
+            <span class="statistics__number">60 дней</span>
+            <span class="statistics__description">Затрачено времени</span>
+          </li>
+        </ul>
 
-          <div class="statistics__item">
-            <dt class="statistics__number">60 дней</dt>
-            <dd class="statistics__description">Затрачено времени</dd>
-          </div>
-        </dl>
-
-        <div class="statistics__amount">
-          <p class="statistics__number">Затраты на питание:
-            <span class="statistics__total">15 000 РУБ.</span>
-          </p>
+        <div class="statistics__amount costs">
+          <span class="costs__title">Затраты на питание:</span>
+          <span class="costs__total">15 000 РУБ.</span>
         </div>
 
-        <div class="statistics__slider ">
+        <div class="statistics__slider">
           <div class="statistics__toggle">
             <button class="statistics__toggle-left" type="button">
               <span class="visually-hidden">Влево</span>
@@ -161,26 +158,34 @@
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <a class="main-footer__logo-no-icon icon-bigger" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="main-footer__logo-title" src="#" width="128" height="24" alt="Cat Energy">
+        <img src="#" width="128" height="24" alt="Cat Energy">
       </a>
 
-      <div class="main-footer__social social">
+      <div class="social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Вконтакте</a>
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Ютуб</a>
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Телеграм</a>
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
           </li>
         </ul>
       </div>
 
-      <div class="main-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <img src="#" width="27" height="34" alt="Логотип HTML Academy">
+      <div class="copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="copyright__text">HTML Academy</span>
+          <img src="#" width="27" height="34" alt="Логотип HTML Academy">
+        </a>
       </div>
     </div>
   </footer>
