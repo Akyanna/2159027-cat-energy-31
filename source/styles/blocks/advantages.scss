@@ -1,7 +1,11 @@
-.advantages {}
+.advantages__title {
+  font-size: 36px;
+  line-height: 40px;
+}
 
-.advantages__wrapper {}
-
-.advantages__list {}
-
-.advantages__item {}
+.advantages__text {
+  color: $secondary-color-text;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}

@@ -1,3 +1,12 @@
-.catalog {}
+.catalog__item-title {
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+}
 
-.catalog__wrapper {}
+.catalog__item-text {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $secondary-color-text;
+}

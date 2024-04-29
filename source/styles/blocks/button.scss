@@ -1,4 +1,13 @@
 .button {
+  font-size: 20px;
+  line-height: 26px;
+  color: $tertiary-color-text;
   background-color: $bg-basic-green;
+  text-decoration: none;
+}
+
+.button--show-more {
+  color: $secondary-color-text;
+  background-color: $bg-ligth-grey;
 }
 

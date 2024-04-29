@@ -1,11 +1,7 @@
-.navigation {}
-
-.navigation__toggle {}
-
-.navigation__wrapper {}
-
-.navigation__list {}
-
-.navigation__item {}
-
-.navigation__link {}
+.navigation__link {
+  font-size: 20px;
+  line-height: 20px;
+  color: $base-color-text;
+  text-transform: uppercase;
+  text-decoration: none;
+}

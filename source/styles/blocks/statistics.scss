@@ -1,7 +1,27 @@
-.statistics {}
+.statistics {
+  background-color: $bg-dark-grey;
+}
 
-.statistics__wrapper {}
+.statistics__title {
+  font-size: 36px;
+  line-height: 40px;
+}
 
-.statistics__list {}
+.statistics__text {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $secondary-color-text;
+}
 
-.statistics__item {}
+.statistics__number {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.statistics__description {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  color: $secondary-color-text;
+}

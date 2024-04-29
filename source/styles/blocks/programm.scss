@@ -1,11 +1,22 @@
-.programm {}
+.programm {
+  background-color: $bg-ligth-grey;
+  text-transform: uppercase;
+}
 
-.programm__wrapper {}
+.programm__title {
+  font-size: 24px;
+  line-height: 37px;
+}
 
-.programm__list {}
+.programm__description {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $secondary-color-text;
+  text-transform: none;
+}
 
-.programm__item {}
-
-.programm__title {}
-
-.programm__description {}
+.programm__button {
+  font-size: 14px;
+  line-height: 18px;
+}

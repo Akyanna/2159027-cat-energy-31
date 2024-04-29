@@ -1,7 +1,16 @@
-.hero {}
+.hero {
+  color: $tertiary-color-text;
+  background-color: $bg-basic-green;
+  text-transform: uppercase;
+}
 
-.hero__wrapper {}
+.hero__title {
+  font-size: 36px;
+  line-height: 36px;
+}
 
-.hero__title {}
+.hero__slogan {
+  font-size: 14px;
+  line-height: 14px;
+}
 
-.hero__slogan {}
