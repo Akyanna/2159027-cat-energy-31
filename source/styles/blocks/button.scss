@@ -1,13 +1,19 @@
 .button {
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 16px;
+  line-height: 20px;
   color: $tertiary-color-text;
   background-color: $bg-basic-green;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .button--show-more {
   color: $secondary-color-text;
   background-color: $bg-ligth-grey;
+}
+
+.button--tertiary {
+  font-size: 20px;
+  line-height: 26px;
 }
 
