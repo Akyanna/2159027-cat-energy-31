@@ -3,13 +3,11 @@
 }
 
 .advantages__title {
+  font-family: $secondary-font;
   font-size: 36px;
   line-height: 40px;
 }
 
 .advantages__text {
-  color: $secondary-color-text;
-  font-family: "Lato", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
+  @include text-description;
 }

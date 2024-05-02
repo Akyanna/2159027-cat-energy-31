@@ -8,19 +8,18 @@
 }
 
 .programm__title {
+  font-family: $secondary-font;
   font-size: 24px;
   line-height: 37px;
 }
 
-.programm__description {
-  font-family: "Lato", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  color: $secondary-color-text;
+.programm__text {
+  @include text-description;
   text-transform: none;
 }
 
 .programm__button {
+  font-family: $secondary-font;
   font-size: 14px;
   line-height: 18px;
 }

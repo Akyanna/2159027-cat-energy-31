@@ -5,11 +5,11 @@
 .catalog__item-title {
   font-size: 16px;
   line-height: 20px;
-  color: #111111;
+  color: $catalog-item-text;
 }
 
 .catalog__item-text {
-  font-family: "Lato", sans-serif;
+  font-family: $primary-font;
   font-size: 12px;
   line-height: 16px;
   color: $secondary-color-text;

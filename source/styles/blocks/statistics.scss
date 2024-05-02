@@ -3,15 +3,13 @@
 }
 
 .statistics__title {
+  font-family: $secondary-font;
   font-size: 36px;
   line-height: 40px;
 }
 
 .statistics__text {
-  font-family: "Lato", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  color: $secondary-color-text;
+  @include text-description;
 }
 
 .statistics__list {
@@ -19,13 +17,13 @@
 }
 
 .statistics__number {
+  font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;
 }
 
 .statistics__description {
-  font-family: "Lato", sans-serif;
+  @include text-description;
   font-size: 12px;
   line-height: 12px;
-  color: $secondary-color-text;
 }
