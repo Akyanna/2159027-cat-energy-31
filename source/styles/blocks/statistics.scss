@@ -4,7 +4,7 @@
 
 .statistics__title {
   font-family: $secondary-font;
-  font-size: 36px;
+  font-size: $title-1;
   line-height: 40px;
 }
 
@@ -18,12 +18,12 @@
 
 .statistics__number {
   font-family: $secondary-font;
-  font-size: 24px;
+  font-size: $title-2;
   line-height: 24px;
 }
 
 .statistics__description {
   @include text-description;
-  font-size: 12px;
+  font-size: $title-6;
   line-height: 12px;
 }

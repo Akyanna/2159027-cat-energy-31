@@ -1,7 +1,7 @@
 .button {
   font-family: $secondary-font;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: $title-4;
+  line-height: $line-height-6;
   color: $tertiary-color-text;
   background-color: $bg-green;
   text-decoration: none;
@@ -14,7 +14,7 @@
 }
 
 .button--tertiary {
-  font-size: 20px;
-  line-height: 26px;
+  font-size: $title-3;
+  line-height: $line-height-4;
 }
 

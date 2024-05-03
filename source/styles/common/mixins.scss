@@ -9,8 +9,8 @@
 }
 
 @mixin text-description {
-  font-family: "Lato", sans-serif;
-  font-size: 14px;
+  font-family: $primary-font;
+  font-size: $title-5;
   line-height: 18px;
   color: $secondary-color-text;
 }

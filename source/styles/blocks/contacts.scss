@@ -1,12 +1,12 @@
 .contacts__slogan {
   font-family: $secondary-font;
-  font-size: 16px;
+  font-size: $title-4;
   line-height: 20px;
   text-transform: uppercase;
 }
 
 .contacts__address {
-  font-size: 14px;
+  font-size: $title-5;
   line-height: 20px;
   color: $secondary-color-text;
 }
