@@ -3,14 +3,14 @@
 }
 
 .catalog__item-title {
-  font-size: $title-4;
+  font-size: 16px;
   line-height: 20px;
   color: $catalog-item-text;
 }
 
 .catalog__item-text {
-  font-family: $primary-font;
-  font-size: $title-6;
+  font-family: $font-primary;
+  font-size: 12px;
   line-height: 16px;
   color: $secondary-color-text;
 }

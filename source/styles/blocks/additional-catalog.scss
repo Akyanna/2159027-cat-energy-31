@@ -1,18 +1,18 @@
 .additional-catalog__title {
-  font-size: $title-2;
+  font-size: 24px;
   line-height: 24px;
 }
 
 .additional-catalog__name {
-  font-size: $title-4;
+  font-size: 16px;
   line-height: 16px;
   color: $catalog-color-text;
   text-transform: uppercase;
 }
 
 .additional-catalog__amount {
-  font-family: $primary-font;
-  font-size: $title-5;
+  font-family: $font-primary;
+  font-size: 14px;
   line-height: 14px;
   color: $secondary-color-text;
 }

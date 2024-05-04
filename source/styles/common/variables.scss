@@ -9,20 +9,15 @@ $bg-green-lighter: rgba($bg-green, 85%);
 $bg-ligth-grey: #f2f2f2;
 $bg-dark-grey: #eaeaea;
 $bg-product-card: #cdcdcd;
-$primary-font: "Lato", sans-serif;
-$secondary-font: "Oswald", sans-serif;
-$step: 4px;
-$title-1: calc($step * 9px);
-$title-2: calc($step * 6px);
-$title-3: calc($step * 5px);
-$title-4: calc($step * 4px);
-$title-5: calc($step * 3.5px);
-$title-6: calc($step * 3px);
-$line-height-1: calc($step * 10);
-$line-height-2: calc(($step * 9) + 1);
-$line-height-3: calc($step * 9);
-$line-height-4: calc($step * 6.5);
-$line-height-5: calc($step * 6);
-$line-height-6: calc($step * 5);
-$line-height-7: calc($step * 4);
-$line-height-8: calc($step * 3.5);
+
+$font-primary: "Lato", "Aria", sans-serif;
+$font-secondary: "Oswald", "Aria", sans-serif;
+
+// $step: 4px;
+// $title-1: calc($step * 9px); //36
+// $title-2: calc($title-1 - 12); //24
+// $title-3: calc($title-2 - 4); //20
+// $title-4: calc($title-3 - 4); //16
+// $title-5: calc($title-4 - 2); //14
+// $title-6: calc($title-5 - 2); // 12
+

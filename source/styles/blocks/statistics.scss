@@ -3,8 +3,8 @@
 }
 
 .statistics__title {
-  font-family: $secondary-font;
-  font-size: $title-1;
+  font-family: $font-secondary;
+  font-size: 36px;
   line-height: 40px;
 }
 
@@ -17,13 +17,13 @@
 }
 
 .statistics__number {
-  font-family: $secondary-font;
-  font-size: $title-2;
+  font-family: $font-secondary;
+  font-size: 24px;
   line-height: 24px;
 }
 
 .statistics__description {
   @include text-description;
-  font-size: $title-6;
+  font-size: 12px;
   line-height: 12px;
 }
