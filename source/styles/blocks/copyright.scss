@@ -1,0 +1,12 @@
+.copyright__text {
+  &::before {
+    display: block;
+    content: "";
+    width: 113px;
+    height: 20px;
+    mask-image: url("../../icons/stack.svg#HTML-Academy-text");
+    mask-repeat: no-repeat;
+    mask-size: 113px 20px;
+    background-color: $secondary-color-text;
+  }
+}
