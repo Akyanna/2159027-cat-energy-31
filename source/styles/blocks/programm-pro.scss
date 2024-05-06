@@ -1,0 +1,11 @@
+.programm--pro {
+  &::before {
+    display: block;
+    content: "";
+    width: 67px;
+    height: 28px;
+    background-image: url("../../icons/stack.svg#cat-pro");
+    background-repeat: no-repeat;
+    background-size: 67px 28px;
+  }
+}

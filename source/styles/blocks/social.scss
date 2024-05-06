@@ -13,10 +13,15 @@
     mask-size: 27px 17px;
     background-color: $bg-social;
   }
+}
 
-  &:hover {
-    --vkontakte: $bg-green;
-  }
+.social__link--vkontakte:hover::before,
+.social__link--vkontakte:focus::before {
+  background-color: $bg-green;
+}
+
+.social__link--vkontakte:active::before {
+  background-color: ;
 }
 
 .social__link--youtube {

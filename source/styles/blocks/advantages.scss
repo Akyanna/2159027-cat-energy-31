@@ -21,16 +21,24 @@
 //   background-color: $bg-green;
 // }
 
+.advantages__item {
+  &::before {
+    display: block;
+    content: "";
+    background-color: $bg-green;
+    background-position: 50%;
+  }
+}
+
 .advantages__item--icon-leaf {
   &::before {
     display: block;
     content: "";
-    width: 25px;
-    height: 28px;
+    width: 60px;
+    height: 60px;
     background-image: url("../../icons/stack.svg#icon_leaf");
     background-repeat: no-repeat;
     background-size: 25px 28px;
-    background-color: #663399;
   }
 }
 
@@ -38,12 +46,11 @@
   &::before {
     display: block;
     content: "";
-    width: 26px;
-    height: 29px;
+    width: 60px;
+    height: 60px;
     background-image: url("../../icons/stack.svg#icon-water");
     background-repeat: no-repeat;
-    background-size: 26px 29px;
-    background-color: #663399;
+    background-size: 30px 29px;
   }
 }
 
@@ -51,12 +58,11 @@
   &::before {
     display: block;
     content: "";
-    width: 26px;
-    height: 29px;
+    width: 60px;
+    height: 60px;
     background-image: url("../../icons/stack.svg#icon_eat");
     background-repeat: no-repeat;
     background-size: 26px 29px;
-    background-color: #663399;
   }
 }
 
@@ -64,12 +70,11 @@
   &::before {
     display: block;
     content: "";
-    width: 26px;
-    height: 31px;
+    width: 60px;
+    height: 60px;
     background-image: url("../../icons/stack.svg#icon-watch");
     background-repeat: no-repeat;
     background-size: 26px 31px;
-    background-color: #663399;
   }
 }
 
