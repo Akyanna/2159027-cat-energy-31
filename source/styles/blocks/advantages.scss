@@ -1,11 +1,76 @@
-.advantages__list {
-  list-style-type: none;
-}
-
 .advantages__title {
   font-family: $font-secondary;
   font-size: $font-size-l;
   line-height: 40px;
+}
+
+.advantages__list {
+  counter-reset: count 0;
+  list-style-type: none;
+}
+
+// position: relative;
+
+// &::before {
+//   content: "";
+//   position: absolute;
+//   left: 0;
+//   top: 0;
+//   width: 60px;
+//   height: 60px;
+//   background-color: $bg-green;
+// }
+
+.advantages__item--icon-leaf {
+  &::before {
+    display: block;
+    content: "";
+    width: 25px;
+    height: 28px;
+    background-image: url("../../icons/stack.svg#icon_leaf");
+    background-repeat: no-repeat;
+    background-size: 25px 28px;
+    background-color: #663399;
+  }
+}
+
+.advantages__item--icon-water {
+  &::before {
+    display: block;
+    content: "";
+    width: 26px;
+    height: 29px;
+    background-image: url("../../icons/stack.svg#icon-water");
+    background-repeat: no-repeat;
+    background-size: 26px 29px;
+    background-color: #663399;
+  }
+}
+
+.advantages__item--icon-eat {
+  &::before {
+    display: block;
+    content: "";
+    width: 26px;
+    height: 29px;
+    background-image: url("../../icons/stack.svg#icon_eat");
+    background-repeat: no-repeat;
+    background-size: 26px 29px;
+    background-color: #663399;
+  }
+}
+
+.advantages__item--icon-period {
+  &::before {
+    display: block;
+    content: "";
+    width: 26px;
+    height: 31px;
+    background-image: url("../../icons/stack.svg#icon-watch");
+    background-repeat: no-repeat;
+    background-size: 26px 31px;
+    background-color: #663399;
+  }
 }
 
 .advantages__text {

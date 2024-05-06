@@ -7,6 +7,30 @@
   list-style-type: none;
 }
 
+.programm--slim {
+  &::before {
+    display: block;
+    content: "";
+    width: 36px;
+    height: 50px;
+    background-image: url("../../icons/stack.svg#cat-slim");
+    background-repeat: no-repeat;
+    background-size: 36px 50px;
+  }
+}
+
+.programm--pro {
+  &::before {
+    display: block;
+    content: "";
+    width: 67px;
+    height: 28px;
+    background-image: url("../../icons/stack.svg#cat-pro");
+    background-repeat: no-repeat;
+    background-size: 67px 28px;
+  }
+}
+
 .programm__title {
   font-family: $font-secondary;
   font-size: $font-size-m;
@@ -22,4 +46,14 @@
   font-family: $font-secondary;
   font-size: $font-size-xs;
   line-height: 18px;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 32px;
+    height: 10px;
+    background-image: url("../../icons/stack.svg#icon_arrow");
+    background-repeat: no-repeat;
+    background-size: 32px 10px;
+  }
 }
