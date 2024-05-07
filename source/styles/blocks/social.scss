@@ -21,7 +21,7 @@
 }
 
 .social__link--vkontakte:active::before {
-  background-color: ;
+  background-color: rgba(104, 183, 56, 0.3);
 }
 
 .social__link--youtube {
@@ -37,6 +37,15 @@
   }
 }
 
+.social__link--youtube:hover::before,
+.social__link--youtube:focus::before {
+  background-color: $bg-green;
+}
+
+.social__link--youtube:active::before {
+  background-color: rgba(104, 183, 56, 0.3);
+}
+
 .social__link--telegram {
   &::before {
     display: block;
@@ -48,4 +57,13 @@
     mask-size: 20px 17px;
     background-color: $bg-social;
   }
+}
+
+.social__link--telegram:hover::before,
+.social__link--telegram:focus::before {
+  background-color: $bg-green;
+}
+
+.social__link--telegram :active::before {
+  background-color: rgba(104, 183, 56, 0.3);
 }

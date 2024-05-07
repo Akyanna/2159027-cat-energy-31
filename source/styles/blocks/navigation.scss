@@ -1,3 +1,16 @@
+.navigation__toggle {
+  width: 24px;
+  height: 24px;
+  background-image: url("../../icons/stack.svg#navigation__toggle-open");
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.navigation__toggle--close {
+  background-image: url("../../icons/stack.svg#navigation__toggle-close");
+}
+
 .navigation__list {
   font-family: $font-secondary;
   list-style-type: none;
