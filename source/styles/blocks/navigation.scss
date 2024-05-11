@@ -20,7 +20,8 @@
 
 .navigation__list {
   font-family: $font-secondary;
-  list-style-type: none;
+
+  @include reset-list;
 }
 
 .navigation__link {
@@ -29,4 +30,22 @@
   color: $base-color-text;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .navigation__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 436px;
+  }
+
+  .navigation__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .navigation__wrapper {
+    width: 475px;
+  }
 }
