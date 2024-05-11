@@ -6,11 +6,25 @@
   background-color: $bg-green;
   text-decoration: none;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: $bg-green-darken;
+  }
+
+  &:active {
+    background-color: $bg-green-darken;
+    color: rgba($tertiary-color-text, 0.3);
+  }
 }
 
 .button--show-more {
   color: $secondary-color-text;
-  background-color: $bg-ligth-grey;
+  background-color: $basic-grey;
+
+  &:hover,
+  &:active {
+    background-color: $special-grey_4;
+  }
 }
 
 

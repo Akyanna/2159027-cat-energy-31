@@ -6,7 +6,7 @@
     height: 34px;
     mask-image: url("../../icons/stack.svg#icon-html_academy");
     mask-size: 27px 34px;
-    background-color: $bg-social;
+    background-color: $social-grey;
   }
 }
 
@@ -20,14 +20,21 @@
 }
 
 .copyright__text {
-  &::before {
-    display: block;
-    content: "";
-    width: 113px;
-    height: 20px;
-    mask-image: url("../../icons/stack.svg#HTML-Academy-text");
-    mask-repeat: no-repeat;
-    mask-size: 113px 20px;
-    background-color: $secondary-color-text;
-  }
+  // &::before {
+  //   display: block;
+  //   content: "";
+  //   width: 113px;
+  //   height: 20px;
+  //   mask-image: url("../../icons/stack.svg#HTML-Academy-text");
+  //   mask-repeat: no-repeat;
+  //   mask-size: 113px 20px;
+  //   background-color: $secondary-color-text;
+  // }
+  font-size: $font-size-s;
+  line-height: 20px;
+  color: $secondary-color-text;
+}
+
+.copyright__text:active {
+  opacity: 0.3;
 }

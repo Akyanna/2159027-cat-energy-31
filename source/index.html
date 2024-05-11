@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Интернет-магазин "Кэт энерджи"</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="icon" href="favicon.ico">
@@ -126,14 +127,9 @@
         </div>
 
         <div class="statistics__slider">
-          <div class="statistics__toggle">
-            <button class="statistics__toggle-left" type="button">
-              <span class="visually-hidden">Влево</span>
-            </button>
-            <button class="statistics__toggle-right" type="button">
-              <span class="visually-hidden">Вправо</span>
-            </button>
-          </div>
+          <button class="statistics__toggle" type="button">
+            <span class="visually-hidden">Передвинуть ползунок слайдера</span>
+          </button>
         </div>
 
         <div class="statistics__images slider">
@@ -155,7 +151,7 @@
     </section>
 
     <section class="contacts">
-      <div class="contacts__wrapper white">
+      <div class="contacts__wrapper">
         <h2 class="visually-hidden">Контакты</h2>
         <p class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</p>
         <address class="contacts__address">
@@ -175,8 +171,8 @@
   </main>
 
   <footer class="main-footer">
-    <div class="main-footer__wrapper">
-      <a class="main-footer__logo-no-icon icon-bigger" href="https://htmlacademy.ru/intensive/adaptive">
+    <div class="main-footer__wrapper logo">
+      <a class="logo__no-icon icon-bigger" href="https://htmlacademy.ru/intensive/adaptive">
         <img src="images/logo/logo-text-mobile.svg" width="128" height="24" alt="Cat Energy">
       </a>
 
@@ -202,8 +198,7 @@
 
       <div class="copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="visually-hidden">HTML Academy</span>
-          <img class="copyright__logo" src="#" width="27" height="34" alt="Логотип HTML Academy">
+          <span class="copyright__text">HTML Academy</span>
         </a>
       </div>
     </div>

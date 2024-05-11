@@ -1,5 +1,5 @@
 .statistics {
-  background-color: $bg-dark-grey;
+  background-color: $special-grey;
 }
 
 .statistics__title {
@@ -26,4 +26,14 @@
   @include text-description;
   font-size: 12px;
   line-height: 12px;
+}
+
+.statistics__toggle {
+  cursor: pointer;
+  background-color: $social-grey;
+  width: 4px;
+  height: 100%;
+  border: none;
+  border-radius: 2px;
+  display: block;
 }

@@ -3,6 +3,11 @@
   color: $tertiary-color-text;
   background-color: $bg-green-lighter;
   text-transform: uppercase;
+  background-image: url("../../images/background/bg-index@1x.png");
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 100%;
+  background-size: 320px 302px;
 }
 
 .hero__title {

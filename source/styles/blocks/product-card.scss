@@ -2,6 +2,7 @@
   font-family: $font-primary;
   font-size: 12px;
   line-height: 16px;
+  background-color: $basic-grey;
   color: $secondary-color-text;
 }
 
@@ -10,4 +11,5 @@
   font-size: $font-size-s;
   line-height: 20px;
   color: $catalog-color-text;
+  text-transform: uppercase;
 }
