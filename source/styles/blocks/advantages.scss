@@ -2,14 +2,20 @@
   font-family: $font-secondary;
   font-size: $font-size-l;
   line-height: 40px;
+  text-align: left;
+  margin: 0 0 40px;
+  padding: 0;
 }
 
 .advantages__list {
+  @include reset-list;
   counter-reset: count 0;
-  list-style-type: none;
+  display: flex;
+  flex-flow: column wrap;
+  // justify-content: flex-start;
 }
 
-// position: relative;
+//
 
 // &::before {
 //   content: "";
@@ -22,9 +28,14 @@
 // }
 
 .advantages__item {
+  // position: relative;
+  padding: 0;
+  margin: 0 0 20px;
+
   &::before {
-    display: block;
+    display: inline-block;
     content: "";
+    // position: absolute;
     background-color: $bg-green;
     background-position: 50%;
   }
@@ -78,3 +89,6 @@
   }
 }
 
+.advantages__text {
+  padding-left: 20px;
+}

@@ -1,20 +1,25 @@
 .programm {
-  background-color: $basic-grey;
   text-transform: uppercase;
 }
 
 .programm__list {
-  list-style-type: none;
+  @include reset-list;
 }
 
 .programm__item {
+  outline: 5px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -5px;
   width: 280px;
+  background-color: $basic-grey;
+  margin-bottom: 20px;
+  padding: 24px 20px;
 }
 
 .programm__title {
   font-family: $font-secondary;
   font-size: $font-size-m;
   line-height: 37px;
+  color: $base-color-text;
 }
 
 .programm__text {
@@ -22,12 +27,16 @@
 }
 
 .programm__button {
+  position: relative;
   font-family: $font-secondary;
   font-size: $font-size-xs;
   line-height: 18px;
   color: $base-color-text;
+  width: 134px;
+  display: flex;
 
-  &::before {
+  &::after {
+    position: absolute;
     display: block;
     content: "";
     width: 32px;
@@ -36,6 +45,8 @@
     mask-repeat: no-repeat;
     mask-size: 32px 10px;
     background-color: $base-color-text;
+    margin-left: 98px;
+    top: 4px;
   }
 
   &:active {
