@@ -3,6 +3,14 @@
   font-family: $font-primary;
   font-size: $font-size-xs;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 64px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 110px;
+  }
 }
 
 .page__body {

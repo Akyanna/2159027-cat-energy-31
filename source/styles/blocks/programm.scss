@@ -1,5 +1,13 @@
 .programm {
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 708;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220;
+  }
 }
 
 .programm__list {
@@ -7,9 +15,7 @@
 }
 
 .programm__item {
-  outline: 5px solid rgba(0, 255, 0, 0.8);
-  outline-offset: -5px;
-  width: 280px;
+  // width: 280px;
   background-color: $basic-grey;
   margin-bottom: 20px;
   padding: 24px 20px;

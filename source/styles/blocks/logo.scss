@@ -9,15 +9,17 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 202px;
-    height: 59px;
+    .logo {
+      width: 202px;
+      height: 59px;
+    }
   }
-}
 
-.logo:hover {
-  opacity: 0.8;
-}
+  .logo:hover {
+    opacity: 0.8;
+  }
 
-.logo:active {
-  opacity: 0.6;
+  .logo:active {
+    opacity: 0.6;
+  }
 }

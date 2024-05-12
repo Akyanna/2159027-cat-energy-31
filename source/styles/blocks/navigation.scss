@@ -1,6 +1,5 @@
 .navigation {
-  outline: 5px solid rgba(0, 255, 0, 0.8);
-  outline-offset: -5px;
+  //
 }
 
 .navigation__toggle {
@@ -22,6 +21,10 @@
   font-family: $font-secondary;
 
   @include reset-list;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .navigation__link {
