@@ -1,10 +1,13 @@
 .main-header__wrapper {
   outline: 5px solid rgba(255, 0, 0, 0.5);
   outline-offset: -5px;
-  // display: flex;
-  // flex-wrap: wrap;
-  // justify-content: space-between;
-  // align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  // margin-right: auto;
+  // margin-left: auto;
+  padding: 13px 0 14px;
 
   @media (min-width: $tablet-width) {
     display: flex;

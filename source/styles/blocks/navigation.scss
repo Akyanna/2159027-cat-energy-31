@@ -1,18 +1,24 @@
 .navigation {
-  //
+  // display: block;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .navigation__toggle {
   width: 24px;
   height: 24px;
   background-image: url("../../icons/stack.svg#navigation__toggle-open");
-  background-size: 24px 24px;
   background-repeat: no-repeat;
-  background-color: $tertiary-color-text;
+  background-color: transparent;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .navigation__toggle--close {
+  display: none;
   background-image: url("../../icons/stack.svg#navigation__toggle-close");
   background-color: $tertiary-color-text;
 }
@@ -24,31 +30,44 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
+    gap: 14px 33px;
+    margin-left: auto;
+    max-width: 470px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 520px;
   }
 }
 
 .navigation__link {
+  display: block;
+  position: relative;
   font-size: 20px;
   line-height: 20px;
   color: $base-color-text;
   text-transform: uppercase;
   text-decoration: none;
-}
 
-@media (min-width: $tablet-width) {
-  .navigation__wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 436px;
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   height: 2px;
+    //   bottom: 0;
+    //   left: 0;
+    //   width: 100%;
+    //   background-color: $bg-green;
+    // }
   }
 
-  .navigation__toggle {
-    display: none;
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .navigation__wrapper {
-    width: 475px;
-  }
-}

@@ -1,4 +1,8 @@
 .button {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  padding: 14px 15px;
   font-family: $font-secondary;
   font-size: $font-size-s;
   line-height: 20px;

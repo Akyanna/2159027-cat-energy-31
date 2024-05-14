@@ -1,10 +1,14 @@
 .logo {
   height: 65px;
+  display: flex;
+  gap: 56px;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     .logo {
       width: 174px;
       height: 50px;
+      gap: 16px;
     }
   }
 
@@ -12,6 +16,7 @@
     .logo {
       width: 202px;
       height: 59px;
+      gap: 14px;
     }
   }
 
@@ -23,3 +28,8 @@
     opacity: 0.6;
   }
 }
+
+.logo__no-icon {
+  margin: 0;
+}
+

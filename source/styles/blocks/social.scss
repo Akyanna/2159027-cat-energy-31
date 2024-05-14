@@ -1,5 +1,8 @@
 .social__list {
-  list-style-type: none;
+  @include reset-list;
+  display: flex;
+  gap: 24px;
+  align-items: center;
 }
 
 .social__link--vkontakte {
@@ -10,6 +13,7 @@
     height: 22px;
     mask-image: url("../../icons/stack.svg#vk");
     mask-repeat: no-repeat;
+    mask-position: center;
     mask-size: 27px 17px;
     background-color: $social-grey;
   }
@@ -32,6 +36,7 @@
     height: 22px;
     mask-image: url("../../icons/stack.svg#yt");
     mask-repeat: no-repeat;
+    mask-position: center;
     mask-size: 24px 19px;
     background-color: $social-grey;
   }
@@ -54,6 +59,7 @@
     height: 22px;
     mask-image: url("../../icons/stack.svg#tg");
     mask-repeat: no-repeat;
+    mask-position: center;
     mask-size: 20px 17px;
     background-color: $social-grey;
   }

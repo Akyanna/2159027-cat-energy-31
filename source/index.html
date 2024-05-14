@@ -26,14 +26,13 @@
       </a>
 
       <nav class="navigation">
-        <button class="navigation__toggle navigation__toggle--close" type="button">
+        <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
 
-        <!-- <div class="navigation__wrapper"> -->
         <ul class="navigation__list navigation__list--closed">
-          <li class="navigation__item navigation__item--current">
-            <a class="navigation__link" href="#">Главная</a>
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--current" href="#">Главная</a>
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="catalog.html">Каталог продукции</a>
@@ -42,7 +41,7 @@
             <a class="navigation__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
-        <!-- </div> -->
+
       </nav>
     </div>
   </header>
@@ -127,18 +126,18 @@
           <span class="costs__total">15 000 РУБ.</span>
         </div>
 
-        <div class="statistics__slider">
-          <button class="statistics__toggle" type="button">
-            <span class="visually-hidden">Передвинуть ползунок слайдера</span>
-          </button>
-        </div>
-
         <div class="statistics__images slider">
           <div class="slider__images-before">
             <picture>
               <source media="(min-width: 768px)" srcset="images/slider/fat-cat-tablet@1x.png 1x, images/slider/fat-cat-tablet@2x.png 2x" width="560" height="512" type="image/png">
               <img src="images/slider/fat-cat-mobile@1x.png" srcset="images/slider/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Изображение толстого кота">
             </picture>
+          </div>
+
+          <div class="statistics__slider">
+            <button class="statistics__toggle" type="button">
+              <span class="visually-hidden">Передвинуть ползунок слайдера</span>
+            </button>
           </div>
 
           <div class="statistics__images-after">
@@ -172,7 +171,7 @@
   </main>
 
   <footer class="main-footer">
-    <div class="main-footer__wrapper logo">
+    <div class="main-footer__wrapper">
       <a class="logo__no-icon icon-bigger" href="https://htmlacademy.ru/intensive/adaptive">
         <img src="images/logo/logo-text-mobile.svg" width="128" height="24" alt="Cat Energy">
       </a>

@@ -1,13 +1,5 @@
 .programm {
   text-transform: uppercase;
-
-  @media (min-width: $tablet-width) {
-    width: 708;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1220;
-  }
 }
 
 .programm__list {
@@ -15,10 +7,13 @@
 }
 
 .programm__item {
-  // width: 280px;
   background-color: $basic-grey;
   margin-bottom: 20px;
   padding: 24px 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .programm__title {
@@ -26,10 +21,20 @@
   font-size: $font-size-m;
   line-height: 37px;
   color: $base-color-text;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-l;
+    line-height: 36px;
+  }
 }
 
 .programm__text {
   text-transform: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-s;
+    line-height: 24px;
+  }
 }
 
 .programm__button {
