@@ -5,10 +5,9 @@
 
 .hero__wrapper {
   background-color: $bg-green-lighter;
-  background-blend-mode: overlay;
-  background-image: url("../../images/background/bg-index@1x.png");
-  background-repeat: no-repeat;
-  background-size: 320px 302px;
+  // background-image: url("../../images/background/bg-index@1x.png");
+  // background-repeat: no-repeat;
+  // background-size: 320px 302px;
 
   @media (min-width: $tablet-width) {
     background-color: $tertiary-color-text;
