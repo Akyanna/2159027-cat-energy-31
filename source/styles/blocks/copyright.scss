@@ -1,8 +1,27 @@
-
-
 .copyright__link {
-  align-self: flex-end;
+  font-size: $font-size-s;
+  line-height: 20px;
+  color: $secondary-color-text;
+  display: block;
+  width: 100%;
+  position: relative;
   margin: 0;
+  padding: 0 40px 0 0;
+  box-sizing: border-box;
+
+  &::after {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "";
+    width: 27px;
+    height: 34px;
+    mask-image: url("../../icons/stack.svg#icon-html_academy");
+    mask-size: 27px 34px;
+    background-color: $social-grey;
+  }
 }
 
 .copyright__link:hover::after,
@@ -14,26 +33,12 @@
   background-color: rgba(104, 183, 56, 0.3);
 }
 
-.copyright__text {
-  position: relative;
-  font-size: $font-size-s;
-  line-height: 20px;
-  color: $secondary-color-text;
-  padding-right: 140px;
+// .copyright__text <span class="copyright__text"> {
+//   font-size: $font-size-s;
+//   line-height: 20px;
+//   color: $secondary-color-text;
+// }
 
-  &::after {
-    display: block;
-    position: absolute;
-    right: 0;
-    content: "";
-    width: 27px;
-    height: 34px;
-    mask-image: url("../../icons/stack.svg#icon-html_academy");
-    mask-size: 27px 34px;
-    background-color: $social-grey;
-  }
-}
-
-.copyright__text:active {
-  opacity: 0.3;
-}
+// .copyright__text:active {
+//   opacity: 0.3;
+// }

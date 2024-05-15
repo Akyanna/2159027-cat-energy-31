@@ -24,6 +24,7 @@
 }
 
 .navigation__list {
+  display: none;
   font-family: $font-secondary;
 
   @include reset-list;
