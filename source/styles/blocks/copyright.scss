@@ -1,12 +1,52 @@
-.copyright__link {
+.copyright {
   font-size: $font-size-s;
   line-height: 20px;
   color: $secondary-color-text;
+  text-decoration: none;
+}
+
+// .copyright__text {
+//   display: flex;
+//   flex-wrap: wrap;
+//   gap: 140px;
+//   align-items: center;
+
+//   &::after {
+//     content: "";
+//     display: inherit;
+//     width: 27px;
+//     height: 34px;
+//     mask-image: url("../../icons/stack.svg#icon-html_academy");
+//     mask-size: 27px 34px;
+//     mask-repeat: no-repeat;
+//     mask-position: center;
+//     background-color: $social-grey;
+//   }
+
+//   @media (min-width: $tablet-width) {
+//     gap: 23px;
+//   }
+// }
+
+.copyright__text:active {
+  opacity: 0.3;
+}
+
+.copyright__text:hover::after,
+.copyright__text:focus::after {
+  background-color: $bg-green;
+}
+
+.copyright__text:active::after {
+  background-color: rgba(104, 183, 56, 0.3);
+}
+
+.copyright__text {
   display: block;
   width: 100%;
   position: relative;
   margin: 0;
-  padding: 0 40px 0 0;
+  padding: 0 166px 0 0;
   box-sizing: border-box;
 
   &::after {
@@ -23,22 +63,3 @@
     background-color: $social-grey;
   }
 }
-
-.copyright__link:hover::after,
-.copyright__link:focus::after {
-  background-color: $bg-green;
-}
-
-.copyright__link:active::after {
-  background-color: rgba(104, 183, 56, 0.3);
-}
-
-// .copyright__text <span class="copyright__text"> {
-//   font-size: $font-size-s;
-//   line-height: 20px;
-//   color: $secondary-color-text;
-// }
-
-// .copyright__text:active {
-//   opacity: 0.3;
-// }

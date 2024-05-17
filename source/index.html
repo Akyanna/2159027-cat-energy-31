@@ -52,7 +52,7 @@
     <section class="hero">
       <div class="hero__wrapper container">
         <h2 class="hero__title">Функциональное питание для котов</h2>
-        <p class="hero__slogan">Занялся собой? Займись котом!</p>\
+        <p class="hero__slogan">Занялся собой? Займись котом!</p>
       </div>
       <picture>
         <source media="(min-width: 1440px)" srcset="images/hero/hero-desctop@1x.png 1x, images/hero/hero-desctop@2x.png 2x" width="552" height="499" type="image/png">
@@ -67,12 +67,12 @@
         <h2 class="visually-hidden">Каталог продукции</h2>
 
         <ul class="programm__list">
-          <li class="programm__item programm--slim">
+          <li class="programm__item programm__item--slim">
             <h3 class="programm__title">Похудение</h3>
             <p class="programm__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a class="programm__button" href="catalog.html">Каталог slim</a>
           </li>
-          <li class="programm__item programm--pro">
+          <li class="programm__item programm__item--pro">
             <h3 class="programm__title">Набор массы</h3>
             <p class="programm__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
             <a class="programm__button" href="catalog.html">Каталог pro</a>
@@ -120,27 +120,23 @@
             <span class="statistics__description">Затрачено времени</span>
           </li>
         </ul>
+        <p class="statistics__total">Затраты на питание:<span class="statistics__price">15 000 РУБ.</span></p>
 
-        <div class="statistics__amount costs">
-          <span class="costs__title">Затраты на питание:</span>
-          <span class="costs__total">15 000 РУБ.</span>
-        </div>
-
-        <div class="statistics__images slider">
-          <div class="slider__images-before">
+        <div class="statistics__slider slider">
+          <div class="slider__wrapper slider__wrapper--before">
             <picture>
               <source media="(min-width: 768px)" srcset="images/slider/fat-cat-tablet@1x.png 1x, images/slider/fat-cat-tablet@2x.png 2x" width="560" height="512" type="image/png">
               <img src="images/slider/fat-cat-mobile@1x.png" srcset="images/slider/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Изображение толстого кота">
             </picture>
           </div>
 
-          <div class="statistics__slider">
+          <!-- <div class="statistics__slider">
             <button class="statistics__toggle" type="button">
               <span class="visually-hidden">Передвинуть ползунок слайдера</span>
             </button>
-          </div>
+          </div> -->
 
-          <div class="statistics__images-after">
+          <div class="slider__wrapper slider__wrapper--after">
             <picture>
               <source media="(min-width: 768px)" srcset="images/slider/slim-cat-tablet@1x.png 1x, images/slider/slim-cat-tablet@2x.png 2x" width="560" height="512" type="image/png">
               <img src="images/slider/slim-cat-mobile@1x.png" srcset="images/slider/slim-cat-mobile@2x.png 2x" width="280" height="256" alt="Изображение стройного кота">
@@ -171,7 +167,7 @@
   </main>
 
   <footer class="main-footer">
-    <div class="main-footer__wrapper container">
+    <div class="main-footer__wrapper container logo">
       <a class="logo__no-icon icon-bigger" href="https://htmlacademy.ru/intensive/adaptive">
         <img src="images/logo/logo-text-mobile.svg" width="128" height="24" alt="Cat Energy">
       </a>
@@ -195,12 +191,10 @@
           </li>
         </ul>
       </div>
-
-      <div class="copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          HTML Academy
-        </a>
-      </div>
+      <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="copyright__text">HTML Academy</span>
+        <span class="visually-hidden">Логотип HTML Academy</span>
+      </a>
     </div>
   </footer>
 </body>
