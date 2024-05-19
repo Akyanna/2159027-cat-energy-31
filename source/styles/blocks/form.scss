@@ -1,6 +1,18 @@
-.form__input {
+.form__field {
+  margin-bottom: 15px;
+  padding: 13px;
   font-family: $font-secondary;
   font-size: 20px;
   line-height: 30px;
   color: $secondary-color-text;
+  max-width: 254px;
+  text-transform: uppercase;
+  border: 1px solid $special-grey_3;
+}
+
+.form__button {
+  width: 100%;
+  min-height: 56px;
+  font-size: 20px;
+  line-height: 26px;
 }

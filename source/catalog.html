@@ -16,13 +16,13 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__wrapper container">
-      <a class="logo" href="index.html">
+      <a class="main-header__logo logo" href="index.html">
         <picture>
           <source media="(min-width: 1440px)" srcset="images/logo/logo-desctop.svg" width="70" height="59" type="image/svg+xml">
           <source media="(min-width: 768px)" srcset="images/logo/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
           <img class="logo__icon" src="images/logo/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
         </picture>
-        <img class="logo__no-icon" src="images/logo/logo-text-mobile.svg" width="101" height="18" alt="Cat Energy">
+        <img class="logo__text logo__text--header" src="images/logo/logo-text-mobile.svg" width="101" height="18" alt="Cat Energy">
       </a>
 
       <nav class="navigation">
@@ -265,18 +265,73 @@
             <a class="product-card__order button button--secondary" href="#">Заказать</a>
           </li>
 
-          <li class="catalog__item">
+          <li class="catalog__item catalog__item--show-more">
             <a class="catalog__item-link" href="#">
               <h3 class="catalog__item-title">Показать еще 100500 товаров</h3>
             </a>
             <p class="catalog__item-text">На самом деле вкусов гораздо больше!</p>
-            <a class="button button--show-more" href="#">Показать все</a>
+            <a class="catalog__button button button--show-more" href="#">Показать все</a>
           </li>
         </ul>
       </div>
     </section>
 
     <section class="additional-catalog">
+      <div class="additional-catalog__wrapper container">
+        <table class="additional-catalog__table table">
+          <caption class="table__caption">
+            <h2 class="table__title">Дополнительные товары</h2>
+          </caption>
+          <thead class="visually hidden">
+            <tr class="visually-hidden">
+              <th>Название товара</th>
+              <th>Количество товара</th>
+              <th>Стоимость
+              <th>Заказ</th>
+            </tr>
+          </thead>
+          <tbody class="table__body">
+            <tr class="table__row">
+              <td class="table__item-title">Сахарозаменитель</td>
+              <td class="table__item">1 упаковка (100 г)</td>
+              <td class="table__item">200 ₽</td>
+              <td class="table__item-order">
+                <a class="table__button button button--primary" href="#">Заказать</a>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__item-title">Питьевая вода</td>
+              <td class="table__item">5 литров</td>
+              <td class="table__item">50 ₽</td>
+              <td class="table__item-order">
+                <a class="table__button button button--primary" href="#">Заказать</a>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__item-title">Молоко</td>
+              <td class="table__item">1 литр</td>
+              <td class="table__item">100 ₽</td>
+              <td class="table__item-order">
+                <a class="table__button button button--primary" href="#">Заказать</a>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__item-title">Витамины</td>
+              <td class="table__item">1 упаковка (30 г)</td>
+              <td class="table__item">300 ₽</td>
+              <td class="table__item-order">
+                <a class="table__button button button--primary" href="#">Заказать</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="promo">
+          <p class="promo__text">Закажите все и получите чехол для кота в подарок!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="additional-catalog">
       <div class="additional-catalog__wrapper container">
         <h2 class="additional-catalog__title">Дополнительные товары</h2>
         <div class="additional-catalog__container">
@@ -320,7 +375,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="subscribe">
       <div class="subscribe__wrapper container">
@@ -328,10 +383,9 @@
         <p class="subscribe__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
 
         <form class="subscribe__form form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="form__field">
-            <input class="form__input" type="email" name="email" placeholder="кuklachev@gmail.com">
-          </label>
-          <button class="button button--tertiary" type="submit">Подписаться</button>
+          <label class="visually-hidden" for="form-email">Ваш email</label>
+          <input class="form__field" type="email" id="form-email" name="user-email" placeholder="кuklachev@gmail.com" required>
+          <button class="form__button button button--primary" type="submit">Подписаться</button>
         </form>
       </div>
     </section>
@@ -358,36 +412,31 @@
   </main>
 
   <footer class="main-footer">
-    <div class="main-footer__wrapper logo container">
-      <a class="logo__no-icon icon-bigger" href="https://htmlacademy.ru/intensive/adaptive">
-        <img src="images/logo/logo-text-mobile.svg" width="128" height="24" alt="Cat Energy">
+    <div class="main-footer__wrapper container">
+      <a class="main-footer__logo logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <img class="logo__text logo__text--footer" src="images/logo/logo-text-mobile.svg" width="128" height="24" alt="Cat Energy">
       </a>
-
-      <div class="social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">Вконтакте</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">Ютуб</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">Телеграм</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="copyright__text">HTML Academy</span>
-        </a>
-      </div>
+      <ul class="main-footer__social social-list">
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Ютуб</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--telegram" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Телеграм</span>
+          </a>
+        </li>
+      </ul>
+      <a class="main-footer__copyright copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="copyright-link__text">HTML Academy</span>
+        <span class="visually-hidden">Логотип HTML Academy</span>
+      </a>
     </div>
   </footer>
 

@@ -10,12 +10,24 @@
   padding: 40px 20px;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
     padding: 55px 0;
+    flex-direction: row;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
     padding: 66px 0;
   }
+}
+
+.main-footer__logo {
+  width: 128px;
+  margin-right: 160px;
+}
+
+.main-footer__social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
 }

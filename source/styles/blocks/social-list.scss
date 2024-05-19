@@ -1,11 +1,14 @@
-.social__list {
+.social-list {
   @include reset-list;
-  display: flex;
-  gap: 24px;
-  align-items: center;
 }
 
-.social__link--vkontakte {
+.social-list__link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.social-list__link--vkontakte {
   &::before {
     display: block;
     content: "";
@@ -19,16 +22,16 @@
   }
 }
 
-.social__link--vkontakte:hover::before,
-.social__link--vkontakte:focus::before {
+.social-list__link--vkontakte:hover::before,
+.social-list__link--vkontakte:focus::before {
   background-color: $bg-green;
 }
 
-.social__link--vkontakte:active::before {
+.social-list__link--vkontakte:active::before {
   background-color: rgba(104, 183, 56, 0.3);
 }
 
-.social__link--youtube {
+.social-list__link--youtube {
   &::before {
     display: block;
     content: "";
@@ -42,16 +45,16 @@
   }
 }
 
-.social__link--youtube:hover::before,
-.social__link--youtube:focus::before {
+.social-list__link--youtube:hover::before,
+.social-list__link--youtube:focus::before {
   background-color: $bg-green;
 }
 
-.social__link--youtube:active::before {
+.social-list__link--youtube:active::before {
   background-color: rgba(104, 183, 56, 0.3);
 }
 
-.social__link--telegram {
+.social-list__link--telegram {
   &::before {
     display: block;
     content: "";
@@ -65,11 +68,11 @@
   }
 }
 
-.social__link--telegram:hover::before,
-.social__link--telegram:focus::before {
+.social-list__link--telegram:hover::before,
+.social-list__link--telegram:focus::before {
   background-color: $bg-green;
 }
 
-.social__link--telegram :active::before {
+.social-list__link--telegram :active::before {
   background-color: rgba(104, 183, 56, 0.3);
 }

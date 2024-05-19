@@ -7,15 +7,21 @@
   font-size: $font-size-s;
   line-height: 20px;
   color: $tertiary-color-text;
+  margin: 0;
+  padding: 80px 61px 43px 58px;
+  text-align: center;
 
   &::before {
     display: block;
     content: "";
+    margin: auto;
+    margin-bottom: 48px;
+    right: 0;
+    left: 0;
     width: 78px;
     height: 80px;
     background-image: url("../../icons/stack.svg#icon_gift");
     background-repeat: no-repeat;
     background-size: 78px 80px;
-    background-color: $bg-green;
   }
 }

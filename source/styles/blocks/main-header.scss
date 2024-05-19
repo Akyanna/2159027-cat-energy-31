@@ -1,14 +1,35 @@
 .main-header__wrapper {
-  // outline: 5px solid rgba(255, 0, 0, 0.5);
-  // outline-offset: -5px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  // margin-right: auto;
-  // margin-left: auto;
+  padding-top: 13px;
+  padding-bottom: 14px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
+    padding-top: 25px;
+    padding-bottom: 0;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+    padding-bottom: 0;
+  }
+}
+
+.main-header__logo {
+  display: flex;
+  gap: 56px;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    gap: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    gap: 14px;
   }
 }

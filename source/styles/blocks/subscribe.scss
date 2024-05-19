@@ -1,13 +1,27 @@
 .subscribe {
   line-height: 24px;
+  color: $base-color-text;
+  font-family: $font-secondary;
+}
+
+.subscribe__wrapper {
+  padding: 40px 20px;
 }
 
 .subscribe__title {
-  font-family: $font-secondary;
+  margin: 0;
+  margin-bottom: 32px;
+  font-weight: 400;
   font-size: $font-size-m;
 }
 
 .subscribe__text {
-  font-family: $font-secondary;
   font-size: $font-size-s;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.subscribe-button {
+  width: 100%;
 }

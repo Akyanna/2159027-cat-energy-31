@@ -1,35 +1,54 @@
 .logo {
-  height: 65px;
-  display: flex;
-  gap: 56px;
-  align-items: center;
+  text-decoration: none;
 
-  @media (min-width: $tablet-width) {
-    .logo {
-      width: 174px;
-      height: 50px;
-      gap: 16px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    .logo {
-      width: 202px;
-      height: 59px;
-      gap: 14px;
-    }
-  }
-
-  .logo:hover {
+  &:hover,
+  &:focus {
     opacity: 0.8;
   }
 
-  .logo:active {
+  &:active {
     opacity: 0.6;
   }
 }
 
-.logo__no-icon {
+.logo__text {
+  display: block;
   margin: 0;
 }
+
+
+// .logo {
+//   height: 65px;
+//   display: flex;
+//   gap: 56px;
+//   align-items: center;
+
+//   @media (min-width: $tablet-width) {
+//     .logo {
+//       width: 174px;
+//       height: 50px;
+//       gap: 16px;
+//     }
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     .logo {
+//       width: 202px;
+//       height: 59px;
+//       gap: 14px;
+//     }
+//   }
+
+//   .logo:hover {
+//     opacity: 0.8;
+//   }
+
+//   .logo:active {
+//     opacity: 0.6;
+//   }
+// }
+
+// .logo__text {
+//   margin: 0;
+// }
 
