@@ -1,14 +1,16 @@
 .catalog__list {
   @include reset-list;
+  display: grid;
+  overflow-x: hidden;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, 324px);
     gap: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, 245px);
     gap: 63px 80px;
   }
 }
@@ -20,8 +22,6 @@
   color: $secondary-color-text;
 
   @media (min-width: $tablet-width) {
-    width: 250px;
-    height: 390px;
     background-color: $basic-grey;
     font-size: $font-size-s;
     line-height: 20px;
