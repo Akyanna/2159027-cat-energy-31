@@ -4,12 +4,12 @@
   grid-template-columns: 280px;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: repeat(2, 324px);
+    grid-template-columns: 1fr 1fr;
     gap: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(4, 245px);
+    grid-template-columns: repeat(4, 1fr);
     gap: 63px 80px;
   }
 }
@@ -34,33 +34,68 @@
 .catalog__item--show-more {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
   padding: 20px 0 25px;
+  border: 2px solid $basic-grey;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 38px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 390px;
+  }
+}
+
+.catalog__item-wrapper {
+  padding: 110px 40px 82px;
 }
 
 .catalog__item-title {
-  // position: relative;
+  position: relative;
   font-family: $font-secondary;
   font-size: $font-size-s;
   text-transform: uppercase;
   text-decoration: none;
   line-height: 20px;
+  // padding: 110px 40px 82px;
+  margin: 0;
 
   &::before {
-    // position: absolute;
+    position: absolute;
     content: "";
     display: block;
     width: 30px;
     height: 30px;
     background-image: url("../../icons/plus.svg");
     background-size: 30px 30px;
+    background-repeat: no-repeat;
     margin-bottom: 23px;
-    top: 50%;
+    top: 50px;
+    left: 95px;
+
+    @media (min-width: $tablet-width) {
+      width: 60px;
+      height: 60px;
+      background-size: 60px 60px;
+      top: 50px;
+      left: 95px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 
 .catalog__item-link {
   color: $catalog-item-text;
+  text-align: center;
+  display: block;
+  margin-bottom: 23px;
 }
 
 .catalog__item-text {
@@ -68,7 +103,13 @@
   font-size: 12px;
   line-height: 16px;
   color: $secondary-color-text;
-  margin: 0 0 21px;
+  margin: 0;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-s;
+    line-height: 18px;
+  }
 }
 
 .catalog__button {
