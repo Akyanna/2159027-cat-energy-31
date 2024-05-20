@@ -1,5 +1,6 @@
 .promo {
   background-color: $bg-green-lighter;
+  margin-top: 35px;
 }
 
 .promo__text {
@@ -8,7 +9,7 @@
   line-height: 20px;
   color: $tertiary-color-text;
   margin: 0;
-  padding: 80px 61px 43px 58px;
+  padding: 60px 61px 43px 58px;
   text-align: center;
 
   &::before {

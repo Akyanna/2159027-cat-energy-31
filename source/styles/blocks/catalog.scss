@@ -24,20 +24,42 @@
     background-color: $basic-grey;
     font-size: $font-size-s;
     line-height: 20px;
-    padding: 0 37px 40px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 169px;
-    height: 390px;
-    padding: 0 38px 40px;
+    min-height: 390px;
   }
 }
 
+.catalog__item--show-more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0 25px;
+}
+
 .catalog__item-title {
+  // position: relative;
   font-family: $font-secondary;
   font-size: $font-size-s;
+  text-transform: uppercase;
+  text-decoration: none;
   line-height: 20px;
+
+  &::before {
+    // position: absolute;
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url("../../icons/plus.svg");
+    background-size: 30px 30px;
+    margin-bottom: 23px;
+    top: 50%;
+  }
+}
+
+.catalog__item-link {
   color: $catalog-item-text;
 }
 
@@ -46,4 +68,9 @@
   font-size: 12px;
   line-height: 16px;
   color: $secondary-color-text;
+  margin: 0 0 21px;
+}
+
+.catalog__button {
+  width: 100%;
 }
