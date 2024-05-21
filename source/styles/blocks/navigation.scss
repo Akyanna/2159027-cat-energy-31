@@ -1,7 +1,10 @@
 .navigation {
-  // display: block;
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: $desktop-width) {
+    //
+  }
 }
 
 .navigation__toggle {
@@ -33,7 +36,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 14px 33px;
-    margin-left: auto;
     max-width: 470px;
   }
 

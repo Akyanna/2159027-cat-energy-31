@@ -14,28 +14,23 @@
   }
 
   @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(2, 1fr);
     gap: 80px;
     margin-bottom: 71px;
   }
 }
 
 .programm__item {
-  display: grid;
-  flex-direction: column;
   background-color: $basic-grey;
   padding: 24px 20px;
   min-height: 218px;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 340px;
-    min-height: 238px;
     padding: 77px 63px 57px 52px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr;
     padding: 77px 63px 53px 52px;
-    min-height: 244px;
     width: 455px;
   }
 }
@@ -45,6 +40,7 @@
   font-size: $font-size-m;
   line-height: 37px;
   color: $base-color-text;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: $font-size-l;

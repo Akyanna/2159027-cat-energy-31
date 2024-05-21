@@ -123,25 +123,21 @@
         <p class="statistics__total">Затраты на питание:<span class="statistics__price">15 000 РУБ.</span></p>
 
         <div class="statistics__slider slider">
-          <div class="slider__wrapper slider__wrapper--before">
-            <picture>
-              <source media="(min-width: 768px)" srcset="images/slider/fat-cat-tablet@1x.png 1x, images/slider/fat-cat-tablet@2x.png 2x" width="560" height="512" type="image/png">
-              <img src="images/slider/fat-cat-mobile@1x.png" srcset="images/slider/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Изображение толстого кота">
-            </picture>
-          </div>
+          <picture>
+            <source media="(min-width: 768px)" srcset="images/slider/fat-cat-tablet@1x.png 1x, images/slider/fat-cat-tablet@2x.png 2x" width="560" height="512" type="image/png">
+            <img class="slider__img slider__img--before" src="images/slider/fat-cat-mobile@1x.png" srcset="images/slider/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Изображение толстого кота">
+          </picture>
 
-          <!-- <div class="statistics__slider">
-            <button class="statistics__toggle" type="button">
+          <div class="slider__toggle">
+            <button class="slider__button" type="button">
               <span class="visually-hidden">Передвинуть ползунок слайдера</span>
             </button>
-          </div> -->
-
-          <div class="slider__wrapper slider__wrapper--after">
-            <picture>
-              <source media="(min-width: 768px)" srcset="images/slider/slim-cat-tablet@1x.png 1x, images/slider/slim-cat-tablet@2x.png 2x" width="560" height="512" type="image/png">
-              <img src="images/slider/slim-cat-mobile@1x.png" srcset="images/slider/slim-cat-mobile@2x.png 2x" width="280" height="256" alt="Изображение стройного кота">
-            </picture>
           </div>
+
+          <picture>
+            <source media="(min-width: 768px)" srcset="images/slider/slim-cat-tablet@1x.png 1x, images/slider/slim-cat-tablet@2x.png 2x" width="560" height="512" type="image/png">
+            <img class="slider__img slider__img--after" src="images/slider/slim-cat-mobile@1x.png" srcset="images/slider/slim-cat-mobile@2x.png 2x" width="280" height="256" alt="Изображение стройного кота">
+          </picture>
         </div>
       </div>
     </section>

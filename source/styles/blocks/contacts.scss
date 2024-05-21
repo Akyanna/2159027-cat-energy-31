@@ -15,12 +15,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    z-index: 2;
-    top: 95px;
     background-color: $tertiary-color-text;
     width: 565px;
     padding: 60px 78px 60px 80px;
+    position: absolute;
+    top: 95px;
+    left: 110px;
   }
 }
 
@@ -62,7 +62,6 @@
 
 .contacts__map-container {
   @media (min-width: $desktop-width) {
-    position: absolute;
-    z-index: 1;
+    //
   }
 }
