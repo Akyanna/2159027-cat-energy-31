@@ -1,6 +1,14 @@
 .promo {
   background-color: $bg-green-lighter;
   margin-top: 35px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    right: -80px;
+    width: 245px;
+    height: 288px;
+  }
 }
 
 .promo__text {
