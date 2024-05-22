@@ -11,6 +11,7 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
     gap: 63px 80px;
+    margin-bottom: 71px;
   }
 }
 
@@ -19,11 +20,13 @@
   font-size: 12px;
   line-height: 16px;
   color: $secondary-color-text;
+  border-top: 1px solid $special-grey_4; //должны выходить за контейнер
 
   @media (min-width: $tablet-width) {
     background-color: $basic-grey;
     font-size: $font-size-s;
     line-height: 20px;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,12 +39,12 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  padding: 20px 0 25px;
-  border: 2px solid $basic-grey;
+  padding: 0 0 25px;
   background-color: transparent;
 
   @media (min-width: $tablet-width) {
     padding: 50px 38px 40px;
+    border: 2px solid $basic-grey;
   }
 
   @media (min-width: $desktop-width) {
@@ -50,38 +53,31 @@
 }
 
 .catalog__item-wrapper {
-  padding: 110px 40px 82px;
+  padding: 25px 30px 21px;
 }
 
 .catalog__item-title {
-  position: relative;
   font-family: $font-secondary;
   font-size: $font-size-s;
   text-transform: uppercase;
   text-decoration: none;
   line-height: 20px;
-  // padding: 110px 40px 82px;
   margin: 0;
 
   &::before {
-    position: absolute;
     content: "";
     display: block;
-    width: 30px;
+    margin: 0 auto 23px;
     height: 30px;
     background-image: url("../../icons/plus.svg");
-    background-size: 30px 30px;
     background-repeat: no-repeat;
-    margin-bottom: 23px;
-    top: 50px;
-    left: 95px;
+    background-size: contain;
+    background-position: center;
 
     @media (min-width: $tablet-width) {
+      margin: 0 auto 50px;
       width: 60px;
       height: 60px;
-      background-size: 60px 60px;
-      top: 50px;
-      left: 95px;
     }
   }
 
@@ -95,7 +91,15 @@
   color: $catalog-item-text;
   text-align: center;
   display: block;
-  margin-bottom: 23px;
+  margin-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 26px;
+  }
 }
 
 .catalog__item-text {
