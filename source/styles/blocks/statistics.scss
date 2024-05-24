@@ -2,12 +2,13 @@
   background-color: $special-grey;
 
   @media (min-width: $tablet-width) {
-    background-color: $tertiary-color-text;
-    // background: linear-gradient(to bottom, $special-grey 70%);
+    background: linear-gradient(to top, $special-grey 40%, $tertiary-color-text 60%);
   }
 
   @media (min-width: $desktop-width) {
-    // background: linear-gradient(to bottom, $tertiary-color-text  0% 15%, $basic-grey 15%, $basic-grey 85%);
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, $basic-grey 78%, $tertiary-color-text 22%);
   }
 }
 
@@ -37,6 +38,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 0;
     margin-bottom: 146px;
     width: 100%;
   }
@@ -142,12 +144,13 @@
 }
 
 .statistics__total {
+  margin-bottom: 20px;
   font-family: $font-secondary;
   font-size: $font-size-xs;
   line-height: 20px;
   color: $base-color-text;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

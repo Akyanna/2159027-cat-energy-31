@@ -5,7 +5,6 @@
 .main-footer__wrapper {
   display: flex;
   flex-direction: column;
-  gap: 40px;
   align-items: center;
   padding: 40px 20px;
 
@@ -23,11 +22,25 @@
 
 .main-footer__logo {
   width: 128px;
+  margin-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .main-footer__social {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 24px;
   align-items: center;
+  margin-bottom: 20px;
+  border-top: 1px solid $special-grey_2;
+  border-bottom: 1px solid $special-grey_2;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }

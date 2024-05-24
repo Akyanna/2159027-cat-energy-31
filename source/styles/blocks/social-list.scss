@@ -1,11 +1,21 @@
 .social-list {
   @include reset-list;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .social-list__link {
+  padding: 19px 0;
   display: block;
   text-decoration: none;
   color: inherit;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .social-list__link--vkontakte {
