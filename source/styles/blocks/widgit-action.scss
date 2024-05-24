@@ -2,6 +2,10 @@
   background-color: $bg-green-lighter;
   margin-top: 35px;
 
+  @media (min-width: $tablet-width) {
+    //
+  }
+
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 101px;

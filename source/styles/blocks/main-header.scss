@@ -1,5 +1,9 @@
 .main-header {
   border-bottom: 1px solid $special-grey_3;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .main-header__wrapper {

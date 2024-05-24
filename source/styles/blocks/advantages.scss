@@ -1,3 +1,7 @@
+.advantages__wrapper {
+  border-bottom: 1px solid $special-grey_6;
+}
+
 .advantages__title {
   margin: 0 0 40px;
   padding: 0;
@@ -28,6 +32,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 80px;
+    margin-bottom: 46px;
   }
 }
 
@@ -55,7 +60,8 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    width: 169px;
+    padding-top: 40px;
+    width: 230px;
     height: 280px;
     counter-increment: step 1;
 
@@ -101,8 +107,6 @@
 }
 
 .advantages__item--icon-period {
-  margin-bottom: 49px;
-
   &::before {
     background-image: url("../../icons/stack.svg#icon-watch");
     background-size: 26px 31px;
@@ -119,6 +123,6 @@
     text-align: left;
     position: absolute;
     left: 0;
-    padding: 151px 0 57px;
+    padding: 111px 0 57px;
   }
 }

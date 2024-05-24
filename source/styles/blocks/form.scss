@@ -3,23 +3,27 @@
 }
 
 .form__field {
-  margin-bottom: 15px;
-  padding: 13px;
   font-family: $font-secondary;
   font-size: 20px;
   line-height: 30px;
+  margin-bottom: 15px;
+  padding: 13px;
+  width: 100%;
   color: $secondary-color-text;
-  width: 496px;
   text-transform: uppercase;
   border: 1px solid $special-grey_3;
 
   @media (min-width: $tablet-width) {
     margin: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 496px;
+  }
 }
 
 .form__button {
-  width: 256px;
+  width: 100%;
   min-height: 56px;
   font-size: 20px;
   line-height: 26px;

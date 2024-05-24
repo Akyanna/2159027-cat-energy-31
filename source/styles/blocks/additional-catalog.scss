@@ -16,6 +16,13 @@
 .additional-catalog__column {
   border-top: 1px solid $special-grey_3;
 
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
@@ -51,7 +58,6 @@
 .additional-catalog__name {
   font-size: $font-size-s;
   line-height: 16px;
-  // font-weight: 400;
   text-transform: uppercase;
   color: $catalog-color-text;
   margin: 13px 0;
@@ -59,7 +65,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 25px;
+    margin: 26px 0 25px;
   }
 
   @media (min-width: $desktop-width) {
@@ -74,8 +80,6 @@
 
 .additional-catalog__list {
   line-height: 14px;
-  margin: 0;
-  margin-bottom: 15px;
   display: flex;
   justify-content: space-between;
 
@@ -93,6 +97,10 @@
 
 .additional-catalog__button {
   margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 
   @media (min-width: $desktop-width) {
     width: 244px;
