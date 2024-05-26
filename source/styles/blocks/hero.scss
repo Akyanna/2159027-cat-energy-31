@@ -1,7 +1,24 @@
 .hero {
   font-family: $font-secondary;
   color: $tertiary-color-text;
-  background-color: $bg-green-lighter;
+  background-image: url("../../images/background/hero-background@1x.png");
+  background-repeat: no-repeat;
+  background-size: 320px 302px;
+
+  &::before {
+    @media (min-width: $desktop-width) {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-image: url("../../images/background/hero-background@1x.png");
+      background-repeat: no-repeat;
+      width: 50%;
+      height: 694px;
+      z-index: -1;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     background-color: $tertiary-color-text;
@@ -10,10 +27,6 @@
 }
 
 .hero__wrapper {
-  // background-image: url("../../images/background/bg-index@1x.png");
-  // background-repeat: no-repeat;
-  // background-size: 320px 302px;
-
   @media (min-width: $tablet-width) {
     display: grid;
   }
@@ -23,6 +36,7 @@
   font-size: $font-size-l;
   line-height: 36px;
   font-weight: 400;
+  padding-top: 27px;
   margin: 0 0 25px;
   text-align: center;
 
