@@ -6,6 +6,7 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
     gap: 60px;
+    margin-bottom: 74px;
   }
 
   @media (min-width: $desktop-width) {
@@ -16,25 +17,36 @@
 }
 
 .catalog__item {
+  position: relative;
   font-family: $font-primary;
   font-size: 12px;
   line-height: 16px;
   color: $secondary-color-text;
-  border-top: 1px solid $special-grey_4; //должны выходить за контейнер
+
+  &::after {
+    content: "";
+    background-color: #ebebeb;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 1px;
+    left: calc(50% - 50vw);
+  }
 
   @media (min-width: $tablet-width) {
     background-color: $basic-grey;
     font-size: $font-size-s;
     line-height: 20px;
-    border: none;
-  }
 
-  @media (min-width: $desktop-width) {
-    // min-height: 390px;
+    &::after {
+      display: none;
+    }
   }
 }
 
 .catalog__item--show-more {
+  // position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -43,7 +55,9 @@
   background-color: transparent;
 
   @media (min-width: $tablet-width) {
-    padding: 50px 38px 40px;
+    height: 430px;
+    padding: 50px 20px 40px;
+    margin-top: 99px;
     border: 2px solid $basic-grey;
   }
 

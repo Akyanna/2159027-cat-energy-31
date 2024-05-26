@@ -1,6 +1,7 @@
 .widgit-action {
   background-color: $bg-green-lighter;
   margin-top: 35px;
+  background-image: url("../../images/background/widgit-background@1x.png");
 
   @media (min-width: $tablet-width) {
     //
@@ -8,8 +9,8 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 101px;
-    right: -81px;
+    top: 113px;
+    right: 29px;
     width: 245px;
     height: 288px;
     margin: 0;

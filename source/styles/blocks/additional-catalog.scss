@@ -1,5 +1,5 @@
 .additional-catalog {
-  width: 100%;
+  // width: 100%;
 
   @media (min-width: $desktop-width) {
     position: relative;
@@ -9,7 +9,7 @@
 .additional-catalog__wrapper {
   @media (min-width: $desktop-width) {
     width: 896px;
-    // position: relative;
+    border-bottom: 1px solid $special-grey_3;
   }
 }
 
@@ -25,16 +25,16 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    flex-direction: row;
+    flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
     padding: 15px 0 16px;
   }
 }
 
-.additional-catalog__column:last-child {
-  border-bottom: 1px solid $special-grey_3;
-}
+// .additional-catalog__column:last-child {
+//   border-bottom: 1px solid red;
+// }
 
 
 .additional-catalog__title {
@@ -46,7 +46,7 @@
   @media (min-width: $tablet-width) {
     font-size: 32px;
     line-height: 32px;
-    margin-bottom: 79px;
+    margin: 0 0 79px;
   }
 
   @media (min-width: $desktop-width) {
@@ -56,6 +56,7 @@
 }
 
 .additional-catalog__name {
+  font-family: $font-secondary;
   font-size: $font-size-s;
   line-height: 16px;
   text-transform: uppercase;
