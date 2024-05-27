@@ -1,7 +1,3 @@
-.additional {
-  // width: 100%;
-}
-
 .additional__title {
   font-family: $font-secondary;
   color: $base-color-text;
@@ -25,7 +21,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 80px;
+    gap: 81px;
+    margin-bottom: 96px;
   }
 }
 
@@ -62,7 +59,7 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0 16px;
+    padding: 17px 0 19px;
   }
 }
 

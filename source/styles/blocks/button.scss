@@ -22,15 +22,12 @@
 .button--primary {
   background-color: $bg-green;
   color: $tertiary-color-text;
+  height: 40px;
 }
 
 .button--secondary {
   background-color: $bg-green;
   color: $tertiary-color-text;
-}
-
-.button--tertiary {
-  //
 }
 
 .button--show-more {
@@ -42,11 +39,3 @@
     background-color: $special-grey_4;
   }
 }
-
-
-/* width: 100%
-min-width:
-max-width::
-
-+ button--big
-*/

@@ -1,9 +1,16 @@
 .hero {
+  height: 480px;
+  margin-bottom: 20px;
   font-family: $font-secondary;
   color: $tertiary-color-text;
-  background-image: url("../../images/background/hero-background@1x.png");
-  background-repeat: no-repeat;
-  background-size: auto 302px;
+  background-image:
+    linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 63%, $tertiary-color-text 63%),
+    image-set(
+      url("../../images/background/hero-background-mobile@1x.jpg") 1x,
+      url("../../images/background/hero-background-mobile@2x.jpg") 2x),
+    linear-gradient(to right, $gradient-first 50%, $gradient-two 50%);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: auto;
   background-position: center top;
 
   &::before {
@@ -13,7 +20,12 @@
       position: absolute;
       top: 0;
       right: 0;
-      background-image: url("../../images/background/hero-background@1x.png");
+      background-image:
+        linear-gradient(to bottom, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+        image-set(
+          url("../../images/background/hero-background-desktop@1x.jpg") 1x,
+          url("../../images/background/hero-background-desktop@2x.jpg") 2x)
+        linear-gradient(to right, $gradient-three, $gradient-three);
       background-repeat: no-repeat;
       width: 50%;
       height: 694px;
@@ -22,8 +34,13 @@
   }
 
   @media (min-width: $tablet-width) {
+    height: 875px;
     background-color: $tertiary-color-text;
     background-image: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 580px;
   }
 }
 
@@ -68,13 +85,6 @@
     text-align: left;
   }
 }
-
-.hero picture {
-  @media (min-width: $tablet-width) {
-    display: contents;
-  }
-}
-
 
 .hero__button {
   font-size: $font-size-s;
