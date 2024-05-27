@@ -5,6 +5,7 @@
   aspect-ratio: 140/128;
 
   @media (min-width: $tablet-width) {
+    margin: 0 auto;
     width: 560px;
     aspect-ratio: 280/256;
   }

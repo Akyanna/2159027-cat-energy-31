@@ -1,19 +1,51 @@
 .widgit-action {
-  background-color: $bg-green-lighter;
-  margin-top: 35px;
-  background-image: url("../../images/background/widgit-background@1x.png");
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  padding: 58px 20px 43px;
+  // background-color: rgba($bg-green, 0.85);  /* перекрывает картинку
+
+  &::before {
+    content: "";
+    width: 78px;
+    height: 80px;
+    background-image: url("../../icons/stack.svg#icon_gift");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 82px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../images/background/widgit-background@1x.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+  }
+
 
   @media (min-width: $tablet-width) {
-    //
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 57px 110px 60px 77px;
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 113px;
-    right: 29px;
-    width: 245px;
-    height: 288px;
-    margin: 0;
+    flex-direction: column;
+    gap: 46px;
+    padding: 56px 42px 43px;
   }
 }
 
@@ -22,25 +54,16 @@
   font-size: $font-size-s;
   line-height: 20px;
   color: $tertiary-color-text;
+  max-width: 180px;
   margin: 0;
-  padding: 60px 61px 43px 58px;
   text-align: center;
 
-  &::before {
-    display: block;
-    content: "";
-    margin: auto;
-    margin-bottom: 48px;
-    right: 0;
-    left: 0;
-    width: 78px;
-    height: 80px;
-    background-image: url("../../icons/stack.svg#icon_gift");
-    background-repeat: no-repeat;
-    background-size: 78px 80px;
+  @media (min-width: $tablet-width) {
+    text-align: left;
   }
 
-  @media (min-width: $tablet-width) {
-    padding: 56px 42px 43px;
+  @media (min-width: $desktop-width) {
+    // max-width: 225px;
+    text-align: center;
   }
 }

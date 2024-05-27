@@ -1,0 +1,130 @@
+.additional {
+  // width: 100%;
+}
+
+.additional__title {
+  font-family: $font-secondary;
+  color: $base-color-text;
+  margin-bottom: 35px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
+    margin: 0 0 79px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+.additional__wrapper {
+  @media (min-width: $desktop-width) {
+    width: 896px;
+    border-bottom: 1px solid $special-grey_3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+  }
+}
+
+.additional__list {
+  @include reset-list;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+    border: 1px solid $special-grey_3;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    // width: 100%;
+  }
+}
+
+.additional__item {
+  padding: 12px 0 19px;
+  border-bottom: 1px solid $special-grey_3;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 38px 28px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0 16px;
+  }
+}
+
+.additional__item:first-child {
+  border-top: 1px solid $special-grey_3;
+}
+
+.additional__name {
+  font-family: $font-secondary;
+  font-size: $font-size-s;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $catalog-color-text;
+  margin: 0 0 13px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 320px;
+  }
+}
+
+.additional__value {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.additional__property {
+  line-height: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-s;
+    line-height: 20px;
+    gap: 49px;
+    margin: 0;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    width: calc(100% - 320px - 244px);
+  }
+}
+
+.additional__button {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+    margin-bottom: 0;
+    margin-left: 40px;
+  }
+}

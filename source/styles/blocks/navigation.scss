@@ -46,7 +46,6 @@
 
 .navigation__link {
   display: block;
-  position: relative;
   font-size: 20px;
   line-height: 20px;
   color: $base-color-text;
@@ -56,21 +55,28 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
-
-    // &::after {
-    //   content: "";
-    //   position: absolute;
-    //   height: 2px;
-    //   bottom: 0;
-    //   left: 0;
-    //   width: 100%;
-    //   background-color: $bg-green;
-    // }
   }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.navigation__link--current {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: $bg-green;
+      margin: -10px 0;
+    }
   }
 }
 
