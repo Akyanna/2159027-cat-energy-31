@@ -21,9 +21,11 @@
       left: auto;
       right: 0;
       background-image:
+        linear-gradient(to bottom, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
         image-set(
           url("../../images/background/hero-background-desktop@1x.jpg") 1x,
-          url("../../images/background/hero-background-desktop@2x.jpg") 2x);
+          url("../../images/background/hero-background-desktop@2x.jpg") 2x),
+        linear-gradient(to right, $gradient-three, $gradient-three);
       background-repeat: no-repeat, no-repeat;
       width: 50%;
       height: 694px;
