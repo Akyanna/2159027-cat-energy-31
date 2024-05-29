@@ -71,11 +71,7 @@
 }
 
 .catalog__item-title {
-  font-family: $font-secondary;
-  font-size: $font-size-s;
-  text-transform: uppercase;
   text-decoration: none;
-  line-height: 20px;
   margin: 0;
 
   &::before {
@@ -93,11 +89,6 @@
       width: 60px;
       height: 60px;
     }
-  }
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 24px;
   }
 }
 
@@ -117,15 +108,10 @@
 }
 
 .catalog__item-text {
-  font-family: $font-primary;
-  font-size: 12px;
-  line-height: 16px;
-  color: $secondary-color-text;
   margin: 0;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    font-size: $font-size-s;
     line-height: 18px;
   }
 }

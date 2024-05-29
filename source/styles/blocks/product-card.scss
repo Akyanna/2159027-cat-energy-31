@@ -43,15 +43,6 @@
 .product-card__title {
   margin: 0;
   margin-bottom: 20px;
-  font-family: $font-secondary;
-  font-size: $font-size-s;
-  line-height: 20px;
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 24px;
-    font-weight: 400;
-  }
 }
 
 .product-card__link-title {
@@ -60,7 +51,6 @@
   margin: 0 auto;
   margin-bottom: 14px;
   text-align: center;
-  text-transform: uppercase;
   text-decoration: none;
   color: $catalog-color-text;
 
@@ -89,7 +79,6 @@
   margin: 0;
   white-space: nowrap;
 }
-
 
 .product-card__button {
   width: 100%;

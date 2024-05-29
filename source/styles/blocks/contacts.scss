@@ -6,12 +6,11 @@
 
 .contacts__wrapper {
   display: flex;
-  line-height: 20px;
   padding: 26px 20px;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
-    padding: 60px 70px;
+    padding: 57px 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -27,27 +26,19 @@
 .contacts__slogan {
   margin: 0;
   max-width: 140px;
-  font-family: $font-secondary;
-  font-size: $font-size-s;
-  color: $base-color-text;
-  text-transform: uppercase;
+  color: $catalog-item-text;
 
   @media (min-width: $tablet-width) {
-    font-size: 20px;
     line-height: 26px;
   }
 }
 
 .contacts__address {
   max-width: 140px;
-  font-size: $font-size-xs;
   line-height: 20px;
   font-style: normal;
-  color: $secondary-color-text;
 
   @media (min-width: $tablet-width) {
-    font-size: $font-size-s;
-    line-height: 20px;
     min-width: 157px;
     text-align: right;
   }

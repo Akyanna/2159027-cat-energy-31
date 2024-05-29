@@ -6,6 +6,14 @@
   }
 }
 
+.main-header--hero {
+  .navigation__link {
+    @media (min-width: $desktop-width) {
+      color: $tertiary-color-text;
+    }
+  }
+}
+
 .main-header__wrapper {
   display: flex;
   flex-wrap: wrap;

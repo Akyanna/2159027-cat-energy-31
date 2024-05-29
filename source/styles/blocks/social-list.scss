@@ -1,6 +1,8 @@
 .social-list {
   @include reset-list;
-  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  column-gap: 24px;
 
   @media (min-width: $tablet-width) {
     margin: 0;

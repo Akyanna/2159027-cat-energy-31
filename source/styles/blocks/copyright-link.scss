@@ -7,11 +7,9 @@
 
 .copyright-link__text {
   display: block;
-  width: 100%;
   position: relative;
   margin: 0;
   padding: 7px 166px 7px 0;
-  box-sizing: border-box;
 
   &::after {
     display: block;
@@ -46,25 +44,3 @@
   background-color: rgba(104, 183, 56, 0.3);
 }
 
-// .copyright-link__text__text {
-//   display: flex;
-//   flex-wrap: wrap;
-//   gap: 140px;
-//   align-items: center;
-
-//   &::after {
-//     content: "";
-//     display: inherit;
-//     width: 27px;
-//     height: 34px;
-//     mask-image: url("../../icons/stack.svg#icon-html_academy");
-//     mask-size: 27px 34px;
-//     mask-repeat: no-repeat;
-//     mask-position: center;
-//     background-color: $social-grey;
-//   }
-
-//   @media (min-width: $tablet-width) {
-//     gap: 23px;
-//   }
-// }
