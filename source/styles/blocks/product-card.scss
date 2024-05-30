@@ -5,9 +5,11 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
-    justify-content: flex-end;
-    padding: 0 37px 40px;
-    background: linear-gradient(to top, $basic-grey 81%, $tertiary-color-text 81%);
+    padding: 10 37px 40px;
+    background: linear-gradient(to top, $basic-grey 85%, $tertiary-color-text 85%);
+    align-items: center;
+    justify-content: stretch;
+    min-height: 429px;
   }
 }
 
@@ -16,12 +18,13 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  width: 50%;
+  min-height: 107px;
+  width: 140px;
+
 
   @media (min-width: $tablet-width) {
     width: 100%;
     height: 210px;
-    margin-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -29,34 +32,28 @@
   }
 }
 
-.product-card__property-wrapper {
-  width: 50%;
-
-  @media (min-width: $tablet-width) {
-    width: 100%;
-    margin-bottom: 26px;
-  }
-
-  @media (min-width: $desktop-width) {
-    //
-  }
-}
-
 .product-card__title {
   margin: 0;
-  margin-bottom: 20px;
+  min-height: 45px;
+  padding-top: 17px;
+  padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
+  }
 }
 
 .product-card__link-title {
   display: block;
   width: 76px;
-  margin-top: 17px; // pixel perfect
   text-align: start;
   text-decoration: none;
   color: $catalog-color-text;
 
   @media (min-width: $tablet-width) {
     width: 135px;
+    text-align: center;
+    // margin-top: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -65,10 +62,25 @@
   }
 }
 
+.product-card__property-wrapper {
+  width: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    //
+  }
+}
+
 .product-card__property {
   display: flex;
   justify-content: space-between;
-  margin: 0 0 6px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid $special-grey_3;
@@ -78,12 +90,13 @@
 
 .product-card__value {
   margin: 0;
+  // padding-right: 2px;
   white-space: nowrap;
 }
 
 .product-card__button {
   width: 100%;
-  margin-top: 15px;
+  margin-top: 21px;
 
   @media (min-width: $tablet-width) {
     height: 40px;
