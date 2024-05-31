@@ -4,7 +4,7 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    gap: 66px;
     margin-bottom: 74px;
   }
 
@@ -45,13 +45,24 @@
 }
 
 .catalog__item--show-more {
-  // position: relative;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   padding: 0 0 25px;
   background-color: transparent;
+
+  &::before {
+    content: "";
+    background-color: #ebebeb;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    height: 1px;
+    left: calc(50% - 50vw);
+  }
 
   @media (min-width: $tablet-width) {
     height: 430px;
