@@ -15,7 +15,7 @@
   text-align: left;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 51px;
+    margin: 0 0 82px;
   }
 }
 
@@ -24,10 +24,10 @@
   margin-bottom: 55px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 46px;
+    margin-bottom: 6px;
     display: flex;
     flex-wrap: wrap;
-    gap: 37px 137px;
+    gap: 36px 138px;
     counter-reset: step 0;
   }
 
@@ -64,7 +64,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    padding-top: 40px;
+    padding-top: 39px;
     width: 246px;
     height: 280px;
     counter-increment: step 1;
@@ -73,8 +73,8 @@
       display: block;
       content: "" counter(step) "";
       position: absolute;
-      top: 10px;
-      left: 115px;
+      top: -39px;
+      left: 116px;
       font-family: $font-secondary;
       font-size: 280px;
       line-height: 280px;
@@ -125,6 +125,6 @@
     text-align: left;
     position: absolute;
     left: 0;
-    padding: 120px 0 57px;
+    padding: 71px 0 57px;
   }
 }

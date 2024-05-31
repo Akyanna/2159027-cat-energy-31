@@ -13,11 +13,11 @@
   display: block;
   margin: 0;
 
-  @media (min-width: $tablet-width) {
-    width: 101px;
-  }
+  // @media (min-width: $tablet-width) {
+  //   width: 101px;
+  // }
 
-  @media (min-width: $desktop-width) {
-    width: 119px;
-  }
+  // @media (min-width: $desktop-width) {
+  //   width: 119px;
+  // }
 }

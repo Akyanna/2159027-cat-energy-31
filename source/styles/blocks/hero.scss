@@ -26,7 +26,7 @@
           url("../../images/background/hero-background-desktop@1x.jpg") 1x,
           url("../../images/background/hero-background-desktop@2x.jpg") 2x),
         linear-gradient(to right, $gradient-three, $gradient-three);
-      background-repeat: no-repeat, no-repeat;
+      background-repeat: no-repeat, no-repeat, no-repeat;
       width: 50%;
       height: 694px;
       // z-index: -1;
@@ -34,13 +34,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    height: 875px;
+    min-height: 848px;
     background-color: $tertiary-color-text;
     background-image: none;
   }
 
   @media (min-width: $desktop-width) {
-    height: 580px;
+    min-height: 580px;
     margin-bottom: 82px;
   }
 }
@@ -53,6 +53,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
     padding-left: 109px;
   }
 }
@@ -65,7 +66,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 520px;
-    padding: 62px 0 40px;
+    padding: 38px 0 40px;
     text-align: left;
     color: $base-color-text;
     order: 0;
@@ -104,16 +105,14 @@
     order: 3;
     top: -83px;
     right: 90px;
-    height: 609px;
+    // height: 609px;
     width: 709px;
   }
-}
 
-.hero__image {
   @media (min-width: $desktop-width) {
-    position: relative;
-    top: -283px;
-    right: -458px;
+    position: absolute;
+    top: 3px;
+    right: 96px;
   }
 }
 

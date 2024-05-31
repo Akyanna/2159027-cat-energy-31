@@ -4,6 +4,10 @@
 
 .programm__wrapper {
   padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .programm__list {
@@ -15,7 +19,7 @@
 
   @media (min-width: $tablet-width) {
     gap: 30px;
-    margin-bottom: 45px;
+    margin-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
@@ -39,7 +43,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 74px 63px 57px 52px;
+    padding: 76px 63px 57px 52px;
     width: 100%;
     min-height: 372px;
   }
@@ -61,7 +65,7 @@
 
     @media (min-width: $tablet-width) {
       left: 442px;
-      top: 78px;
+      top: 80px;
       width: 205px;
       height: 211px;
     }
@@ -86,7 +90,7 @@
 
     @media (min-width: $tablet-width) {
       left: 411px;
-      top: 88px;
+      top: 90px;
       width: 268px;
       height: 200px;
     }

@@ -3,9 +3,13 @@
   display: flex;
   justify-content: center;
   column-gap: 24px;
+  width: 100%;
+
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    padding: 0 0 0 40px;
+    width: auto;
   }
 }
 
