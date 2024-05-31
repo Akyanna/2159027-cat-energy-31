@@ -8,35 +8,55 @@
 }
 
 .navigation__toggle {
-  width: 24px;
-  height: 24px;
-  background-image: url("../../icons/stack.svg#navigation__toggle-open");
-  background-repeat: no-repeat;
-  background-color: transparent;
+  display: block;
+  background-color: $tertiary-color-text;
   border: none;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-.navigation__toggle--close {
-  display: none;
-  background-image: url("../../icons/stack.svg#navigation__toggle-close");
-  background-color: $tertiary-color-text;
+.navigation--closed .navigation__toggle {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 21px;
+    width: 25px;
+    height: 24px;
+    background-image: url("../../icons/stack.svg#navigation__toggle-open");
+    background-repeat: no-repeat;
+    background-color: transparent;
+  }
+}
+
+.navigation--opened .navigation__toggle {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../../icons/stack.svg#navigation__toggle-close");
+    background-repeat: no-repeat;
+    background-color: transparent;
+  }
 }
 
 .navigation__list {
+  @include reset-list;
   display: none;
   font-family: $font-secondary;
-
-  @include reset-list;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    gap: 14px 33px;
-    max-width: 470px;
+    justify-content: flex-start;
+    gap: 10px 34px;
+    // width: 440px;
   }
 
   @media (min-width: $desktop-width) {
@@ -46,6 +66,7 @@
 }
 
 .navigation__link {
+  padding: 13px 1px;
   position: relative;
   display: block;
   font-size: 20px;

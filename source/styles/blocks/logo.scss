@@ -1,6 +1,4 @@
 .logo {
-  text-decoration: none;
-
   &:hover,
   &:focus {
     opacity: 0.8;
@@ -14,4 +12,12 @@
 .logo__text {
   display: block;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: -3px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 119px;
+  }
 }

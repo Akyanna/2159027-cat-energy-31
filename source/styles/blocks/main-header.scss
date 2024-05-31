@@ -1,8 +1,10 @@
 .main-header {
-  border-bottom: 1px solid $special-grey_3;
+  // border-bottom: 1px solid $special-grey_3;
+  padding-block: 13px 11px;
 
   @media (min-width: $tablet-width) {
     border: none;
+    padding-block: 25px;
   }
 }
 
@@ -16,18 +18,18 @@
 
 .main-header__wrapper {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
-  padding-top: 13px;
-  padding-bottom: 10px;
+  column-gap: 13px; //new
+  // margin: 0 auto;
+  // padding-top: 13px;
+  // padding-bottom: 10px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 25px;
-    padding-bottom: 0;
-    margin: 0;
+    // padding-top: 25px;
+    // padding-bottom: 0;
   }
+
 
   @media (min-width: $desktop-width) {
     padding-top: 55px;
