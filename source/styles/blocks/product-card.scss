@@ -101,6 +101,10 @@
     height: 32px;
     padding-top: 5px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
 }
 
 .product-card__value {

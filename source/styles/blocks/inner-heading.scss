@@ -3,6 +3,10 @@
 
   @media (min-width: $tablet-width) {
     text-align: left;
-    margin: 43px 0 87px;
+    margin: 48px 0 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 19px 0 87px;
   }
 }

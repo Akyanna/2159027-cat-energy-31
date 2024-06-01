@@ -6,6 +6,10 @@
     border: none;
     padding-block: 21px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-block: 54px;
+  }
 }
 
 .main-header--hero {
@@ -32,8 +36,8 @@
 
 
   @media (min-width: $desktop-width) {
-    padding-top: 29px;
-    padding-bottom: 0;
+    // padding-top: 29px;
+    // padding-bottom: 0;
   }
 }
 

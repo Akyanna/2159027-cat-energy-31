@@ -16,14 +16,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 59px 0;
+    padding: 75px 0;
     margin: 0 auto;
   }
 }
 
 .main-footer__logo {
   width: 128px;
-  // margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
     margin: 0;

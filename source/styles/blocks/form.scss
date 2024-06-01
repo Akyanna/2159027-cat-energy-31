@@ -27,4 +27,8 @@
   min-height: 56px;
   font-size: 20px;
   line-height: 26px;
+
+  @media (min-width: $desktop-width) {
+    width: 256px;
+  }
 }
