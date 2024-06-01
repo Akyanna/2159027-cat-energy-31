@@ -1,5 +1,9 @@
 .additional__title {
   margin-block: 24px 36px;
+  position: relative;
+  background-color: $tertiary-color-text;
+  width: fit-content;
+  box-shadow: -40px 0 0 0 $tertiary-color-text, 40px 0 0 0 $tertiary-color-text;
 
   @media (min-width: $tablet-width) {
     margin: 0 40px 79px;
