@@ -12,12 +12,10 @@
 .logo__text {
   display: block;
   margin: 0;
+}
 
-  // @media (min-width: $tablet-width) {
-  //   width: 101px;
-  // }
-
-  // @media (min-width: $desktop-width) {
-  //   width: 119px;
-  // }
+.logo__text--header {
+  @media (min-width: $desktop-width) {
+    width: 119px;
+  }
 }

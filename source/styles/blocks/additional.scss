@@ -1,8 +1,8 @@
 .additional__title {
-  margin-block: 26px 36px;
+  margin-block: 24px 36px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 60px;
+    margin: 0 40px 79px;
   }
 }
 
@@ -32,7 +32,7 @@
 }
 
 .additional__item {
-  padding-block: 11px 19px;
+  padding-block: 12px 18px;
   border-bottom: 1px solid $special-grey_3;
 
   @media (min-width: $tablet-width) {

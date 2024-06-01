@@ -25,7 +25,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     gap: 80px;
-    margin-bottom: 71px;
+    margin-bottom: 82px;
   }
 }
 
@@ -97,7 +97,7 @@
 
     @media (min-width: $desktop-width) {
       left: 33px;
-      top: 47px;
+      top: 44px;
       width: 134px;
       height: 100px;
     }
@@ -156,6 +156,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 27px;
+    max-width: 100%;
   }
 }
 

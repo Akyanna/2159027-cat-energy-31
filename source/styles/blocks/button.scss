@@ -1,15 +1,16 @@
 .button {
-  display: grid;
-  align-items: center;
-  cursor: pointer;
   padding: 10px 15px;
   font-family: $font-secondary;
   font-size: 16px;
   line-height: 20px;
+  display: grid;
+  align-items: center;
+  border: none;
+  cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  border: none;
+
 
   &:hover {
     background-color: $bg-green-darken;
@@ -29,7 +30,7 @@
 .button--secondary {
   background-color: $bg-green;
   color: $tertiary-color-text;
-  padding: 9px 26px;
+  padding: 10px 26px;
 }
 
 .button--show-more {

@@ -10,7 +10,7 @@
   @media (min-width: $desktop-width) {
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, $basic-grey 78%, $tertiary-color-text 22%);
+    background: linear-gradient(to top, $basic-grey 79%, $tertiary-color-text 21%);
   }
 }
 
@@ -43,7 +43,7 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 0;
-    margin-bottom: 146px;
+    margin-bottom: 155px;
     width: 100%;
   }
 }
@@ -72,7 +72,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 69px;
+    margin: 0 0 68px;
     width: 436px;
   }
 }
@@ -89,7 +89,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 55px;
+    margin: 0 0 62px;
   }
 }
 
@@ -169,7 +169,7 @@
 }
 
 .statistics__price {
-  padding-left: 5px;
+  margin-left: 4px;
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -179,6 +179,7 @@
 
   @media (min-width: $desktop-width) {
     display: inline;
+    margin-left: 62px;
   }
 }
 
@@ -197,7 +198,7 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -9px;
+    right: 30px;
   }
 }
