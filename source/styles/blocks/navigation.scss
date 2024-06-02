@@ -1,10 +1,6 @@
 .navigation {
   display: flex;
   flex-wrap: wrap;
-
-  @media (min-width: $desktop-width) {
-    //
-  }
 }
 
 .navigation__toggle {
@@ -56,12 +52,25 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     gap: 10px 34px;
-    // width: 440px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 520px;
     z-index: 1;
+  }
+
+  &--has-background {
+    @media (min-width: $desktop-width) {
+      color: $tertiary-color-text;
+
+      // background-color: transparent;
+    }
+  }
+
+  &--has-background .navigation__link--current::after {
+    @media (min-width: $desktop-width) {
+      background-color: $tertiary-color-text;
+    }
   }
 }
 
@@ -83,9 +92,35 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
-    // color: $tertiary-color-text;
+  }
+
+  // &--curent::after {
+  //   @media (min-width: $tablet-width) {
+  //     &::after {
+  //       content: "";
+  //       position: absolute;
+  //       height: 2px;
+  //       bottom: 3px;
+  //       left: 0;
+  //       right: 0;
+  //       background-color: $bg-green;
+  //     }
+  //   }
+  // }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
+
 
 .navigation__link--current {
   @media (min-width: $tablet-width) {
@@ -93,11 +128,10 @@
       content: "";
       position: absolute;
       height: 2px;
-      bottom: 0;
+      bottom: 3px;
       left: 0;
       right: 0;
       background-color: $bg-green;
-      margin: -10px 0;
     }
   }
 }

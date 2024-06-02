@@ -13,7 +13,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 72px 110px 96px;
+    padding: 0 0 102px;
     margin-bottom: 0;
   }
 }
@@ -22,13 +22,16 @@
   margin: 0;
   margin-bottom: 32px;
   position: relative;
+  width: fit-content;
+  background-color: $tertiary-color-text;
+  box-shadow: -40px 0 0 0 $tertiary-color-text, 40px 0 0 0 $tertiary-color-text;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 66px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 auto;
+    margin-bottom: 72px;
   }
 }
 

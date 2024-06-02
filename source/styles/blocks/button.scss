@@ -1,8 +1,12 @@
 .button {
   padding: 10px 15px;
+
   font-family: $font-secondary;
   font-size: 16px;
   line-height: 20px;
+  color: $tertiary-color-text;
+
+  background-color: $bg-green;
   display: grid;
   align-items: center;
   border: none;
@@ -17,8 +21,17 @@
   }
 
   &:active {
-    background-color: $bg-green-darken;
     color: rgba($tertiary-color-text, 0.3);
+  }
+
+
+  &:focus {
+    background-color: $bg-green-darken;
+  }
+
+
+  &:disabled {
+    background-color: $basic-grey;
   }
 }
 

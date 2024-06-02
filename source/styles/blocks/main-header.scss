@@ -4,7 +4,7 @@
 
   @media (min-width: $tablet-width) {
     border: none;
-    padding-block: 21px;
+    padding-block: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -12,13 +12,13 @@
   }
 }
 
-.main-header--hero {
-  .navigation__link {
-    @media (min-width: $desktop-width) {
-      color: $tertiary-color-text;
-    }
-  }
-}
+// .main-header--hero {
+//   .navigation__link {
+//     @media (min-width: $desktop-width) {
+//       color: $tertiary-color-text;
+//     }
+//   }
+// }
 
 .main-header__wrapper {
   display: flex;
