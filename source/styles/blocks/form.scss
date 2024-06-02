@@ -20,6 +20,10 @@
   @media (min-width: $desktop-width) {
     width: 496px;
   }
+
+  &:user-invalid {
+    border: 2px solid $error-color;
+  }
 }
 
 .form__button {

@@ -59,11 +59,9 @@
     z-index: 1;
   }
 
-  &--has-background {
+  &--has-background .navigation__list {
     @media (min-width: $desktop-width) {
       color: $tertiary-color-text;
-
-      // background-color: transparent;
     }
   }
 
@@ -73,6 +71,12 @@
     }
   }
 }
+
+// &--has-background .navigation__list {
+//   @media (min-width: $desktop-width) {
+//     color: $tertiary-color-text;
+//   }
+// }
 
 .navigation__link {
   padding: 13px 1px;

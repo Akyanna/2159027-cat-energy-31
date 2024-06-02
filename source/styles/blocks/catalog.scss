@@ -11,7 +11,7 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
     gap: 68px 80px;
-    margin-bottom: 71px;
+    margin-bottom: 70px;
   }
 }
 
@@ -66,12 +66,16 @@
 
   @media (min-width: $tablet-width) {
     padding: 50px 33px 40px;
-    margin-top: 80px;
+    margin-top: 76px;
     border: 2px solid $basic-grey;
 
     &::before {
       display: none;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 68px;
   }
 }
 
@@ -95,16 +99,19 @@
     @media (min-width: $tablet-width) {
       width: 60px;
       height: 60px;
-      top: -28px;
+      top: -50px;
+      left: 94px;
     }
 
     @media (min-width: $desktop-width) {
-      top: -14px;
+      top: -41px;
+      left: 57px;
     }
   }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 13px;
+    padding-top: 48px;
   }
 }
 
