@@ -127,19 +127,6 @@
   }
 }
 
-.programm__title--pro {
-  padding-left: 71px;
-
-  @media (min-width: $tablet-width) {
-    // padding-left: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    // padding-left: 162px;
-    // margin-bottom: 73px;
-  }
-}
-
 .programm__text {
   position: relative;
   padding-bottom: 23px;
@@ -182,6 +169,20 @@
     mask-size: contain;
     background-color: $base-color-text;
     margin-top: 1px;
+  }
+
+  &:hover {
+    &::after {
+      transform-origin: 0;
+      transform: scaleX(1.33);
+    }
+  }
+
+  &:focus {
+    &::after {
+      transform-origin: 0;
+      transform: scaleX(1.33);
+    }
   }
 
   &:active {

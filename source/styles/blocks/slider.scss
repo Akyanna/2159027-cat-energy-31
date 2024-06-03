@@ -48,9 +48,13 @@
   height: 40px;
   background-color: $tertiary-color-text;
   color: inherit;
-  border: 2px solid $social-grey;
+  border: 2px solid currentColor;
   border-radius: 20px;
   cursor: col-resize;
+
+  &:hover {
+    color: $bg-green;
+  }
 }
 
 .slider__button::before {
@@ -58,7 +62,7 @@
   width: 24px;
   height: 18px;
   mask-image: url("../../icons/stack.svg#slider-arrow");
-  background-color: $social-grey;
+  background-color: currentColor;
 }
 
 .slider__toggle:hover {

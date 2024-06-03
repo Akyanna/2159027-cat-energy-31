@@ -1,4 +1,8 @@
 .contacts {
+  &--grey {
+    background-color: $basic-grey;
+  }
+
   @media (min-width: $desktop-width) {
     position: relative;
   }
@@ -16,9 +20,9 @@
   @media (min-width: $desktop-width) {
     background-color: $tertiary-color-text;
     width: 565px;
-    padding: 61px 78px 52px;
+    padding: 59px 78px 58px;
     position: absolute;
-    top: 95px;
+    top: 97px;
     left: 110px;
   }
 }

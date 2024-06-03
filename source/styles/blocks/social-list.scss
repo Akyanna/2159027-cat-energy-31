@@ -40,46 +40,33 @@
       opacity: 0.3;
     }
   }
-}
 
-.social-list__link--vkontakte {
   &::before {
-    display: block;
     content: "";
+    display: block;
     width: 28px;
     height: 22px;
+
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: cover;
+    background-color: $social-grey;
+
+    transition: background-color 0.3s, opacity 0.3s;
+  }
+
+  &--vkontakte::before {
     mask-image: url("../../icons/stack.svg#vk");
-    mask-repeat: no-repeat;
-    mask-position: center;
     mask-size: 27px 17px;
-    background-color: $social-grey;
   }
-}
 
-.social-list__link--youtube {
-  &::before {
-    display: block;
-    content: "";
-    width: 28px;
-    height: 22px;
+  &--youtube::before {
     mask-image: url("../../icons/stack.svg#yt");
-    mask-repeat: no-repeat;
-    mask-position: center;
     mask-size: 24px 19px;
-    background-color: $social-grey;
   }
-}
 
-.social-list__link--telegram {
-  &::before {
-    display: block;
-    content: "";
-    width: 28px;
-    height: 22px;
+  &--telegram::before {
     mask-image: url("../../icons/stack.svg#tg");
-    mask-repeat: no-repeat;
-    mask-position: center;
     mask-size: 20px 17px;
-    background-color: $social-grey;
   }
 }

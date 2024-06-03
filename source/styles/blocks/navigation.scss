@@ -4,10 +4,17 @@
 }
 
 .navigation__toggle {
+  padding: 0;
+  margin: 0;
   display: block;
   background-color: $tertiary-color-text;
   border: none;
   cursor: pointer;
+  position: absolute;
+  top: 7px;
+  right: 20px;
+  width: 26px;
+  height: 24px;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -17,10 +24,8 @@
 .navigation--closed .navigation__toggle {
   &::before {
     content: "";
-    position: absolute;
-    top: 20px;
-    right: 21px;
-    width: 25px;
+    display: block;
+    width: 26px;
     height: 24px;
     background-image: url("../../icons/stack.svg#navigation__toggle-open");
     background-repeat: no-repeat;
@@ -31,9 +36,7 @@
 .navigation--opened .navigation__toggle {
   &::before {
     content: "";
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    display: block;
     width: 20px;
     height: 20px;
     background-image: url("../../icons/stack.svg#navigation__toggle-close");
@@ -58,25 +61,13 @@
     max-width: 520px;
     z-index: 1;
   }
-
-  &--has-background .navigation__list {
-    @media (min-width: $desktop-width) {
-      color: $tertiary-color-text;
-    }
-  }
-
-  &--has-background .navigation__link--current::after {
-    @media (min-width: $desktop-width) {
-      background-color: $tertiary-color-text;
-    }
-  }
 }
 
-// &--has-background .navigation__list {
-//   @media (min-width: $desktop-width) {
-//     color: $tertiary-color-text;
-//   }
-// }
+.navigation__list--accent-color .navigation__link {
+  @media (min-width: $desktop-width) {
+    color: $tertiary-color-text;
+  }
+}
 
 .navigation__link {
   padding: 13px 1px;
@@ -98,20 +89,6 @@
     line-height: 30px;
   }
 
-  // &--curent::after {
-  //   @media (min-width: $tablet-width) {
-  //     &::after {
-  //       content: "";
-  //       position: absolute;
-  //       height: 2px;
-  //       bottom: 3px;
-  //       left: 0;
-  //       right: 0;
-  //       background-color: $bg-green;
-  //     }
-  //   }
-  // }
-
   &:hover {
     opacity: 0.6;
   }
@@ -124,7 +101,6 @@
     opacity: 0.3;
   }
 }
-
 
 .navigation__link--current {
   @media (min-width: $tablet-width) {
@@ -140,3 +116,8 @@
   }
 }
 
+.navigation__list--accent-color .navigation__link--current::after {
+  @media (min-width: $desktop-width) {
+    background-color: $tertiary-color-text;
+  }
+}

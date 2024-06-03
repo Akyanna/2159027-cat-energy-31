@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <title>Интернет-магазин Cat Enegry | Главная страница</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff" crossorigin="anonymous">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/apple-touch-icon.png">
@@ -14,7 +16,7 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header main-header--hero">
+  <header class="main-header" data-test="header">
     <div class="main-header__wrapper container">
       <a class="main-header__logo logo" href="index.html">
         <picture>
@@ -30,7 +32,7 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
 
-        <ul class="navigation__list navigation__list--has-background">
+        <ul class="navigation__list navigation__list--accent-color">
           <li class="navigation__item">
             <a class="navigation__link navigation__link--current" href="#">Главная</a>
           </li>
@@ -49,7 +51,7 @@
   <main class="main-container">
     <h1 class="visually-hidden">Интернет-магазин Кэт-энерджи</h1>
 
-    <section class="hero">
+    <section class="hero" data-test="hero">
       <div class="hero__wrapper container">
         <h2 class="hero__title first-title">Функциональное питание для котов</h2>
         <p class="hero__slogan">Занялся собой? Займись котом!</p>
@@ -67,7 +69,7 @@
       </div>
     </section>
 
-    <section class="programm">
+    <section class="programm" data-test="programs">
       <div class="programm__wrapper container">
         <h2 class="visually-hidden">Каталог продукции</h2>
 
@@ -78,7 +80,7 @@
             <a class="programm__button" href="catalog.html">Каталог slim</a>
           </li>
           <li class="programm__item programm__item--pro">
-            <h3 class="programm__title programm__item--pro">Набор массы</h3>
+            <h3 class="programm__title">Набор массы</h3>
             <p class="programm__text first-text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
             <a class="programm__button" href="catalog.html">Каталог pro</a>
           </li>
@@ -86,7 +88,7 @@
       </div>
     </section>
 
-    <section class="advantages">
+    <section class="advantages" data-test="features">
       <div class="advantages__wrapper container">
         <h2 class="advantages__title first-title">Как это работает</h2>
         <ul class="advantages__list">
@@ -110,7 +112,7 @@
       </div>
     </section>
 
-    <section class="statistics">
+    <section class="statistics" data-test="proof">
       <div class="statistics__wrapper container">
         <h2 class="statistics__title first-title">Живой пример</h2>
         <div class="statistics__info">
@@ -149,7 +151,7 @@
       </div>
     </section>
 
-    <section class="contacts">
+    <section class="contacts" data-test="contacts">
       <div class="contacts__wrapper container">
         <h2 class="visually-hidden">Контакты</h2>
         <p class="contacts__slogan catalog-title">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
@@ -165,7 +167,7 @@
     </section>
   </main>
 
-  <footer class="main-footer">
+  <footer class="main-footer" data-test="footer">
     <div class="main-footer__wrapper container">
       <a class="main-footer__logo logo" href="https://htmlacademy.ru/intensive/adaptive">
         <img class="logo__text logo__text--footer" src="images/logo/logo-footer.svg" width="128" height="24" alt="Логотит интернет-магазина Cat Energy">
