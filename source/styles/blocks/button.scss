@@ -2,7 +2,7 @@
   padding: 10px 15px;
 
   font-family: $font-secondary;
-  font-size: 16px;
+  font-size: $font-size-s;
   line-height: 20px;
   color: $tertiary-color-text;
 
@@ -35,23 +35,23 @@
   }
 }
 
-.button--primary {
-  background-color: $bg-green;
-  color: $tertiary-color-text;
-}
-
-.button--secondary {
-  background-color: $bg-green;
-  color: $tertiary-color-text;
-  padding: 10px 26px;
-}
-
 .button--show-more {
   color: $secondary-color-text;
   background-color: $basic-grey;
 
-  &:hover,
+  &:hover {
+    background-color: $special-grey_4;
+  }
+
   &:active {
     background-color: $special-grey_4;
+  }
+}
+
+.button--big {
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    padding: 14px 26px;
   }
 }

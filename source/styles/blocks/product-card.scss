@@ -110,8 +110,4 @@
 .product-card__button {
   width: 100%;
   margin-top: auto;
-
-  @media (min-width: $tablet-width) {
-    height: 40px;
-  }
 }
