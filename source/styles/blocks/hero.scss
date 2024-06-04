@@ -31,7 +31,7 @@
 
   @media (min-width: $desktop-width) {
     min-height: 580px;
-    margin: 0 0 77px;
+    margin: 0 0 80px;
 
     &::before {
       position: absolute;
@@ -76,7 +76,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 520px;
-    padding: 64px 0 40px;
+    padding: 41px 0 40px;
     text-align: left;
     color: $base-color-text;
     order: 0;
