@@ -16,6 +16,10 @@
   width: 26px;
   height: 24px;
 
+  &--nojs {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -24,7 +28,6 @@
 .navigation__list {
   @include reset-list;
   font-family: $font-secondary;
-
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -112,16 +115,20 @@
 // меню открыто на мобильном устройстве
 
 @media (max-width: $mobile-width-only) {
+  .navigation {
+    width: 100%;
+  }
+
   .navigation--closed .navigation__item {
     display: none;
   }
 
   .navigation--opened .navigation__list {
-    position: absolute;
+    // position: absolute;
     background-color: $tertiary-color-text;
     width: 100%;
     right: 0;
-    z-index: 3;
+    z-index: 10;
     top: 52px;
   }
 
@@ -168,8 +175,4 @@
   background-repeat: no-repeat;
   background-color: transparent;
 }
-
-// .navigation--no-js {
-//   display: block;
-// }
 

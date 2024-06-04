@@ -21,9 +21,14 @@
 .main-header__wrapper {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   column-gap: 13px;
   position: relative;
+
+  &--nojs {
+    flex-direction: column;
+  }
 }
 
 .main-header__logo {
