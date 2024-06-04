@@ -16,9 +16,9 @@
   width: 26px;
   height: 24px;
 
-  &--nojs {
-    display: none;
-  }
+  // &--nojs {
+  //   display: none;
+  // }
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -124,7 +124,6 @@
   }
 
   .navigation--opened .navigation__list {
-    // position: absolute;
     background-color: $tertiary-color-text;
     width: 100%;
     right: 0;
@@ -175,4 +174,3 @@
   background-repeat: no-repeat;
   background-color: transparent;
 }
-

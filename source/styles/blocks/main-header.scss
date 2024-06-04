@@ -1,5 +1,5 @@
 .main-header {
-  padding: 13px 0 11px;
+  padding: 13px 0 0;
 
   @media (min-width: $tablet-width) {
     padding: 24px 0;
@@ -20,14 +20,14 @@
 
 .main-header__wrapper {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   column-gap: 13px;
   position: relative;
 
-  &--nojs {
-    flex-direction: column;
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
   }
 }
 
