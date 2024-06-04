@@ -3,10 +3,10 @@
 }
 
 .programm__wrapper {
-  padding: 20px 30px 0;
+  margin: 20px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
+    margin: 0 auto;
   }
 }
 
@@ -43,7 +43,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 76px 63px 57px 52px;
+    padding: 78px 63px 57px 52px;
     width: 100%;
     min-height: 372px;
   }
@@ -116,7 +116,7 @@
   @media (min-width: $tablet-width) {
     font-size: $font-size-l;
     line-height: 36px;
-    margin: 0 0 24px;
+    margin: 0 0 23px;
     padding-left: 0;
   }
 
