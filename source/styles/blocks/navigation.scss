@@ -124,11 +124,12 @@
   }
 
   .navigation--opened .navigation__list {
+    position: absolute;
     background-color: $tertiary-color-text;
     width: 100%;
     right: 0;
     z-index: 10;
-    top: 52px;
+    top: 41px;
   }
 
   .navigation--opened .navigation__link {
