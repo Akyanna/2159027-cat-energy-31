@@ -1,5 +1,5 @@
 .hero {
-  min-height: 480px;
+  height: 480px;
   font-family: $font-secondary;
   color: $tertiary-color-text;
   font-weight: 400;
@@ -24,14 +24,15 @@
   }
 
   @media (min-width: $tablet-width) {
-    min-height: 848px;
+    height: 848px;
+    margin-bottom: 13px;
     background-color: $tertiary-color-text;
     background-image: none;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 580px;
-    margin: 0 0 80px;
+    height: 580px;
+    margin: 0 0 69px;
 
     &::before {
       position: absolute;
@@ -56,34 +57,35 @@
 }
 
 .hero__wrapper {
+  padding-top: 27px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    padding: 0 0 0 120px;
+    padding: 53px 0 0 120px;
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
-    padding: 0 0 0 109px;
+    padding: 99px 0 0 109px;
   }
 }
 
 .hero__title {
-  margin: 0;
-  padding: 27px 15px 25px;
+  margin: 0 0 24px;
   text-align: center;
   color: $tertiary-color-text;
 
   @media (min-width: $tablet-width) {
     max-width: 520px;
-    padding: 41px 0 40px;
+    margin: 0 0 40px;
     text-align: left;
     color: $base-color-text;
     order: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 109px 0 41px;
+    margin: 0 0 39px;
   }
 }
 
@@ -91,25 +93,28 @@
   font-size: $font-size-xs;
   line-height: 14px;
   text-transform: uppercase;
-  margin: 0 0 29px;
+  margin: 0 0 30px;
   padding: 0 42px 0 40px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
     color: $base-color-text;
-    margin: 0;
-    padding: 0 0 50px;
+    margin: 0 0 50px;
+    padding: 0;
     text-align: left;
     order: 1;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 51px;
+    margin: 0 0 51px;
+    padding: 0;
   }
 }
 
 .hero__picture {
+  display: block;
+
   @media (min-width: $tablet-width) {
     position: relative;
     order: 3;
@@ -120,13 +125,9 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 29px;
+    top: 17px;
     right: 94px;
   }
-}
-
-.hero__image {
-  display: block;
 }
 
 .hero__button {
