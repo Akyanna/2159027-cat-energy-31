@@ -114,12 +114,6 @@
   .navigation {
     width: 100%;
 
-    &--nojs {
-      .navigation__list {
-        position: unset;
-      }
-    }
-
     &--opened {
       .navigation__list {
         position: absolute;
@@ -128,6 +122,12 @@
         right: 0;
         z-index: 10;
         top: 41px;
+      }
+    }
+
+    &--nojs {
+      .navigation__list {
+        position: unset;
       }
     }
   }
